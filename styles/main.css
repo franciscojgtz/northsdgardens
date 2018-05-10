@@ -1,0 +1,36 @@
+body{
+	min-width: 320px;
+	font-size: 14px;
+}
+
+html {
+	margin: 0;
+}
+
+header {
+	//height: 655px;
+	padding: 100px 0;
+	//background-image: url(https://static.pexels.com/lib/headers/waterfall.jpg);
+	background-image: url("../images/architecture-boating-canal-534171.jpg");
+	background-position: 50% 50%;
+	
+	//background-size: 100% 100%;
+	//font-size: 75%;
+	background-color: #1E2832;
+  color: #fff;
+  text-align: center;
+}
+
+.header_title {
+	padding: 20px;
+	font-size: 62px;
+	font-weight: 	800;
+	letter-spacing: -1px;
+	background-color: #1E2832;
+  color: rgba(255, 255, 255, 0.75);
+}
+footer {
+	background-color: #1E2832;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
