@@ -18,6 +18,22 @@ video {
   max-width: 100%;
 }
 
+article, 
+aside, 
+canvas, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+menu, 
+nav, 
+section,
+img {
+  display: block;
+}
+
 body{
 	font-size: 1.6rem;
 	min-width: 320px;
@@ -50,39 +66,66 @@ header {
 	margin: 1rem 0;
 	padding: 1rem;
 	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .gallery_container {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
-
-	.gallery_item {
-		width: 100%;
-		margin: 1rem;
-	}
 }
+
+.gallery_item {
+	width: 100%;
+}
+
 footer {
 
 }
 
-@media screen and (min-width: 600px) { 
-	body{
-		background-color: blue;
+@media screen and (min-width: 300px) { 
+	.gallery_item {
+		width: calc(50% - 1rem);
 	}
+}
 
+@media screen and (min-width: 450px) { 
+	.gallery_item {
+		width: calc(33.3333% - 1rem);
+		margin: 0.5rem;
+	}
+}
+
+@media screen and (min-width: 600px) { 
 	.services_item {
 		width: calc(50% - 2rem);
 		margin: 1rem;
 	}
+
+	.gallery_item {
+		width: calc(25% - 1rem);
+	}
+}
+
+@media screen and (min-width: 750px) { 
+	.gallery_item {
+		width: calc(20% - 1rem);
+	}
 }
 
 @media screen and (min-width: 900px) { 
-	body {
-		background-color: pink;
-	}
-
 	.services_item {
 		width: calc(33.3333% - 2rem);
+	}
+
+	.gallery_item {
+		width: calc(16.6666% - 1rem);
+	}
+}
+
+@media screen and (min-width: 1024px) { 
+	main {
+		width: 1024px;
+		margin: 0 auto;
 	}
 }
