@@ -24,20 +24,26 @@
 
 <body>
 	<div>
-			<header>
-				<div>
-						<h1 class="header_title">North SD <br><span>Landscaping</span></h1>
-						<nav></nav>
-				</div>
-				<div>
-					<p>Some text goes in here</p>
-					<div>
-						<p>Contact Us: 760 456 1234</p>
-					</div>
+			<header id="header">
+				<div class="header_container">
+					<h1 class="header_title">North SD <br><span>Landscaping</span></h1>
+					<nav id="nav">
+						<ul>
+							<li>
+								<a href="#">Services</a>
+							</li>
+							<li>
+								<a href="#">Work Gallery</a>
+							</li>
+							<li>
+								<a href="#">Testimonials</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</header>
 			
-			<main>
+			<main class="main">
 				<h3>Services</h3>
 				<section class="services_container">
 					<div class="services_item">
@@ -100,8 +106,8 @@
 				</section>
 
 				<h3>Testimonials</h3>
-				<section>
-					<div>
+				<section class="testimonials_container">
+					<div class="testimonial_item">
 						<p>I am very fortunate to have had Jose and his crew at northsdlandscape providing 
 							landscaping services at our home in Carlsbad for more than 10 years. He and his 
 							colleagues go above and beyond in their service and in their wide knowledge  of
@@ -112,7 +118,7 @@
 						</p>
 						<p><span>Steve Duff </span>La Costa, CA.</p>
 					</div>
-					<div>
+					<div class="testimonial_item">
 						<p>
 							We live in Carlsbad, California. For the past 15 years, Jose Cruz, of northSDlandscape
 							company, has been our landscape maintenance specialist. We have been very happy with his 
@@ -128,7 +134,7 @@
 						<p>We strongly recommend his services.</p>
 						<p><span>Robert & Rosemary Callaghan</span> Carlsbad, CA.</p>
 					</div>
-					<div>
+					<div class="testimonial_item">
 						<p>It is a pleasure to recommend the services of North San Diego Landscape. The skilled experts 
 							of North San Diego Landscape redesigned our garden and courtyard from top to bottom, and the
 							result is a flourishing masterpiece on which we recieve compliments daily. They also desig
@@ -148,6 +154,20 @@
 	</div>
 
   <!-- SCRIPTS -->
+  <script>
+		window.onscroll = function() {myFunction()};
+		
+		var header = document.getElementById("header");
+		var sticky = header.offsetTop;
+		
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		  } else {
+			header.classList.remove("sticky");
+		  }
+		}
+		</script>
 </body>
 
 </html>
