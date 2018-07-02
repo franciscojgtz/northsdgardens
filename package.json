@@ -33,6 +33,7 @@
   "dependencies": {
     "autoprefixer": "^8.6.4",
     "babel-register": "^6.26.0",
+    "baguettebox.js": "^1.10.0",
     "cssnano": "^3.10.0",
     "del": "^3.0.0",
     "gulp-concat": "^2.6.1",

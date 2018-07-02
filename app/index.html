@@ -11,6 +11,7 @@
   <title>North SD Landscaping</title>
 
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -84,33 +85,37 @@
 				</section>
 
 				<h3 id="gallery" class="jumptarget">Work Gallery</h3>
-				<section class="gallery_container">
+				<section class="gallery_container gallery">
 					<div class="gallery_item">
-						<img src="http://placehold.it/800x800">
+						<a href="images/IMG_0472.JPG" data-caption="Image caption">
+							<img src="images/IMG_0472.JPG" alt="a">
+						</a>
+					</div>
+
+					<div class="gallery_item" >
+						<a href="images/IMG_0531.JPG" data-caption="Image caption">
+							<img src="images/IMG_0531.JPG" alt="b">
+						</a>
 					</div>
 
 					<div class="gallery_item">
-						<img src="http://placehold.it/800x800">
+						<img src="http://placehold.it/800x800" alt="c">
 					</div>
 
 					<div class="gallery_item">
-						<img src="http://placehold.it/800x800">
-					</div>
-
-					<div class="gallery_item">
-						<img src="http://placehold.it/800x800">
+						<img src="http://placehold.it/800x800" alt="d">
 					</div>
 					<div class="gallery_item">
-						<img src="http://placehold.it/800x800">
+						<img src="http://placehold.it/800x800" alt="e">
 					</div>
 					<div class="gallery_item">
-						<img src="http://placehold.it/800x800">
+						<img src="http://placehold.it/800x800" alt="f">
 					</div>
 					<div class="gallery_item">
-						<img src="http://placehold.it/800x800">
+						<img src="http://placehold.it/800x800" alt="g">
 					</div>
 					<div class="gallery_item">
-						<img src="http://placehold.it/800x800">
+						<img src="http://placehold.it/800x800" alt="h">
 					</div>
 				</section>
 
@@ -162,7 +167,11 @@
 			</footer>
 	</div>
 
+	
+
   <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js" async onload="initLightbox()">baguetteBox.run('.gallery');</script>
+
   <script>
 		window.onscroll = function() {sitckyHeader()};
 		
@@ -185,7 +194,16 @@
 			hamburger_menu.classList.toggle("change");
 			nav.classList.toggle('open');
 		}
+
+		function initLightbox() {
+			baguetteBox.run('.gallery');
+			console.log('initiated');
+		}
+
+		
 		</script>
+
+		
 </body>
 
 </html>

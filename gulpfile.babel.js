@@ -48,7 +48,7 @@ const paths = {
 
   images: {
     src: 'app/images/**/*',
-    dest: 'imgages',
+    dest: 'dist/images',
   },
 };
 
@@ -115,7 +115,7 @@ function jpgImages(done) {
 }
 
 function optimizeImages(done) {
-  return gulp.src(`${paths.images.src}.jpg`)
+  return gulp.src(`${paths.images.src}`)
     .pipe(plumber())
     .pipe(imagemin([
       imagemin.gifsicle({ interlaced: true }),
