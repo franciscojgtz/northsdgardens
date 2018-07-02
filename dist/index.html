@@ -27,7 +27,7 @@
 			<header class="header">
 				<div class="header_container">
 					<h1 class="header_title">North SD <span>Landscaping</span></h1>
-					<div class="hamburger_menu" onclick="changeHamburgerMenu(this)">
+					<div class="hamburger_menu" onclick="changeHamburgerMenu()">
 						<div class="bar1"></div>
 						<div class="bar2"></div>
 						<div class="bar3"></div>
@@ -36,13 +36,13 @@
 					<nav class="nav">
 						<ul>
 							<li>
-								<a href="#services">Services</a>
+								<a href="#services" onclick="changeHamburgerMenu()">Services</a>
 							</li>
 							<li>
-								<a href="#gallery">Work Gallery</a>
+								<a href="#gallery" onclick="changeHamburgerMenu()">Work Gallery</a>
 							</li>
 							<li>
-								<a href="#testimonials">Testimonials</a>
+								<a href="#testimonials" onclick="changeHamburgerMenu()">Testimonials</a>
 							</li>
 						</ul>
 					</nav>
@@ -55,7 +55,7 @@
 			</header>
 			
 			<main class="main">
-				<h3 id="services">Services</h3>
+				<h3 id="services" class="jumptarget">Services</h3>
 				<section class="services_container">
 					<div class="services_item">
 						<p>Landscape Construction</p>
@@ -83,7 +83,7 @@
 					</div>
 				</section>
 
-				<h3 id="gallery">Work Gallery</h3>
+				<h3 id="gallery" class="jumptarget">Work Gallery</h3>
 				<section class="gallery_container">
 					<div class="gallery_item">
 						<img src="http://placehold.it/800x800">
@@ -112,11 +112,9 @@
 					<div class="gallery_item">
 						<img src="http://placehold.it/800x800">
 					</div>
-
-					
 				</section>
 
-				<h3 id="testimonials">Testimonials</h3>
+				<h3 id="testimonials" class="jumptarget">Testimonials</h3>
 				<section class="testimonials_container">
 					<div class="testimonial_item">
 						<p>I am very fortunate to have had Jose and his crew at northsdlandscape providing 
@@ -172,6 +170,8 @@
 		const sticky = header.offsetTop;
 
 		const nav= document.querySelector('.nav');
+		const hamburger_menu = document.querySelector('.hamburger_menu');
+	
 		
 		function sitckyHeader() {
 		  if (window.pageYOffset > sticky) {
@@ -181,8 +181,8 @@
 		  }
 		}
 
-		function changeHamburgerMenu(x) {
-			x.classList.toggle("change");
+		function changeHamburgerMenu() {
+			hamburger_menu.classList.toggle("change");
 			nav.classList.toggle('open');
 		}
 		</script>
