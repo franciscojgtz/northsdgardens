@@ -53,14 +53,18 @@ body {
 	min-width: 320px;
 	margin: 0;
 	padding: 0;
-	background-color: green;
+	background-color: #def2f1;
+	color: #585858;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.8rem;
 }
   
 header {
-	background-color: blueviolet;
+	background-color: #3aafa9;
 	margin: 0;
 	padding-top: 1rem;
 	width: 100%;
+	color: #17252a;
 	
 	ul {
 		list-style: none;
@@ -79,6 +83,12 @@ header {
 
 .header_title {
 	display: inline-block;
+	color: #fff;
+	background-color: #17252a;
+	padding: 1rem 2rem;
+	border-radius: 3rem;
+	font-weight: 300;
+	font-size: 2rem;
 }
 
 .hamburger_menu {
@@ -90,7 +100,7 @@ header {
 .bar1, .bar2, .bar3 {
 	width: 35px;
 	height: 5px;
-	background-color: #333;
+	background-color: #17252a;
 	margin: 6px 0;
 	transition: 0.4s;
 }
@@ -99,7 +109,9 @@ header {
 	transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+	opacity: 0;
+}
 
 .change .bar3 {
 	transform: rotate(45deg) translate(-8px, -8px);
@@ -121,34 +133,42 @@ header {
   	margin-right: auto;
 	position: absolute;
   /* This trasform moves the drawer off canvas. */
-    transform: translate(-300px, 0);
+    transform: translate(-1000px, 0);
  /* Optionally, we animate the drawer. */
-    transition: transform 0.3s ease;
+	transition: transform 0.5s ease;
+	
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #17252a;
+		text-decoration: underline;
+	}
 }
 
 nav.open {
 	transform: translate(0, 0);
 	position: relative;
+
 }
 
 main {
 	padding-top: 2rem;
-	background-color: #f1f1f1;
 
-	h3:before { 
-		display: block; 
-		content: " "; 
-		margin-top: -80px; 
-		height: 80px; 
-		visibility: hidden; 
-		pointer-events: none;
+	h3 {
+		margin: 10rem 1rem 5rem 1rem;
+		font-size: 4rem;
+		color: #17252a; 
 	}
 }
 
 .contact {
-	padding: 0.5rem;
-	background-color: aqua;
+	padding-bottom: 0.5rem;
 	text-align: center;
+	color: #fff;
+	font-size: 1.2rem;
 }
 
 .jumptarget::before {
@@ -169,6 +189,7 @@ main {
 }
 
 .services_item {
+	font-size: 1.8rem;
 	background-color: #fff;
 	width: 100%;
 	margin: 1rem 0;
@@ -198,14 +219,26 @@ main {
 
 .testimonial_item {
 	width: 100%;
-	border: burlywood 5px solid;
+	border: #17252a 5px solid;
 	margin: 1rem;
 	padding: 1rem;
-	border-radius: 0 2rem 2rem 2rem;
+	border-radius: 2rem;
+	background-color: #fff;
+}
+
+.client {
+	color: #fff;
+	background-color: #17252a;
+	padding: 0.5rem;
+	text-align: center;
 }
 
 footer {
-
+	text-align: center;
+	background-color: #17252a;
+	color: #def2f1;
+	padding: 1rem;
+	font-size: 1.4rem;
 }
 
 @media screen and (min-width: 300px) { 
