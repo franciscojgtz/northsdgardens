@@ -83,7 +83,7 @@ function copyHTML() {
 }
 
 function webPImages(done) {
-  const imgSizes = ['300', '350', '400', '450', '500', '550', '600', '700', '800'];
+  const imgSizes = ['300', '400', '500', '600', '700', '800', '1000', '1500', '2000'];
   return imgSizes.forEach(size => gulp.src(`${paths.images.src}.jpg`)
     .pipe(plumber())
     .pipe(webp())
@@ -94,7 +94,7 @@ function webPImages(done) {
 }
 
 function jpgImages(done) {
-  const imgSizes = ['300', '350', '400', '450', '500', '550', '600', '700', '800'];
+  const imgSizes = ['300', '400', '500', '600', '700', '800', '1000', '1500', '2000'];
   return imgSizes.forEach(size => gulp.src(`${paths.images.src}.jpg`)
     .pipe(plumber())
     .pipe(imagemin([
