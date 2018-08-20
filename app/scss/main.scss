@@ -18,6 +18,11 @@ video {
   max-width: 100%;
 }
 
+img[data-sizes="auto"] { 
+	display: block; 
+	width: 100%; 
+}
+
 article, 
 aside, 
 canvas, 
