@@ -305,6 +305,36 @@ main {
 	text-align: center;
 }
 
+.more {
+	text-align: center;
+	margin-top: 3.75rem;
+	line-height: 1.5rem;
+	margin-bottom: 1.25rem;
+	border-top: 1px solid rgba(0, 0, 0, .3);
+	font-size: 2rem;
+
+	span {
+		position: relative;
+		top: -1.8rem;
+		display: block;
+		width: 26rem;
+		margin: 0 auto;
+		padding: 1rem 0;
+		background-color: #def2f1;
+	}
+	
+	a {
+		color: #0a526e;
+		background-image: none;
+	}
+
+	.icon-google {
+		background-image: url('/images/google.svg');
+		padding-left: 2.5rem;
+		background-repeat: no-repeat;
+	}
+}
+
 footer {
 	text-align: center;
 	background-color: #17252a;
