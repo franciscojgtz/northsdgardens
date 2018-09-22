@@ -95,6 +95,16 @@ header {
 	border-radius: 3rem;
 	font-weight: 300;
 	font-size: 2rem;
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+		font-size: 2.3rem;
+	}
 }
 
 .hamburger_menu {
