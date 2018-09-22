@@ -186,6 +186,15 @@ main {
 	color: #fff;
 	font-size: 2rem;
 	line-height: 3rem;
+
+	a {
+		text-decoration: none;
+		color:#fff; 
+	}
+
+	a:hover {
+		color: #fff;
+	}
 }
 
 .jumptarget::before {
