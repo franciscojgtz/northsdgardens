@@ -1,78 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="northsdgardens.com" />
+    <meta name="author" content="Francisco Gutiérrez" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="northsdgardens.com">
-	<meta name="author" content="Francisco Gutiérrez">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>North SD Gardens</title>
 
-  <title>North SD Gardens</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      src="//normalize-css.googlecode.com/svn/trunk/normalize.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
+  <body>
+    <div>
+      <div id="top"></div>
+      <header class="header" id="header">
+        <div
+          class="header_container"
+          itemscope
+          itemtype="http://schema.org/LocalBusiness"
+        >
+          <h1 class="header_title" itemprop="name">
+            <a href="#top">North SD Gardens</a>
+          </h1>
+          <div class="hamburger_menu" onclick="changeHamburgerMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
 
-</head>
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="#services" onclick="changeHamburgerMenu()">Services</a>
+              </li>
+              <li>
+                <a href="#gallery" onclick="changeHamburgerMenu()"
+                  >Work Gallery</a
+                >
+              </li>
+              <li>
+                <a href="#testimonials" onclick="changeHamburgerMenu()"
+                  >Testimonials</a
+                >
+              </li>
+            </ul>
+          </nav>
 
-<body>
-	<div>
-		<div id="top"></div>
-			<header class="header" id="header">
-				<div class="header_container" itemscope itemtype="http://schema.org/LocalBusiness">
-					<h1 class="header_title" itemprop="name"><a href="#top">North SD Gardens</a></h1>
-					<div class="hamburger_menu" onclick="changeHamburgerMenu()">
-						<div class="bar1"></div>
-						<div class="bar2"></div>
-						<div class="bar3"></div>
-					</div>
-					
-					<nav class="nav">
-						<ul>
-							<li>
-								<a href="#services" onclick="changeHamburgerMenu()">Services</a>
-							</li>
-							<li>
-								<a href="#gallery" onclick="changeHamburgerMenu()">Work Gallery</a>
-							</li>
-							<li>
-								<a href="#testimonials" onclick="changeHamburgerMenu()">Testimonials</a>
-							</li>
-						</ul>
-					</nav>
+          <div class="contact">
+            <h2>
+              <span itemprop="telephone"
+                ><a href="tel:+17604508114">760 450 8114</a></span
+              >
+              - Jose & Guadalupe
+            </h2>
+          </div>
+        </div>
+      </header>
 
-					<div class="contact">
-						<h2><span itemprop="telephone"><a href="tel:+17604508114">760 450 8114</a></span> - Jose & Guadalupe</h2>
-					</div>
-				</div>
+      <main class="main">
+        <div class="hero_image">
+          <div class="hero_text" role="img" aria-label="Flowers">
+            <h4>Landscaping in North County San Diego</h4>
+          </div>
+        </div>
 
-			</header>
-			
-			<main class="main">
+        <div class="slogan">
+          <h5>Fully Insured</h5>
+          <p class="license_number">License Number: BL-1269046</p>
+        </div>
 
-				<div class="hero_image">
-					<div class="hero_text" role="img" aria-label="Flowers">
-						<h4>Landscaping in North County San Diego</h4>				
-					</div>
-				</div>
-
-				<div><h5 class="slogan">Fully Insured</h5></div>
-
-				<h3 id="services" class="jumptarget">Services</h3>
-				<section class="services_container">
-					<div class="services_item">
-						<p>Landscape Construction</p>
-						<picture>
-							<source data-srcset="/images/IMG_1179_300.webp 300w, 
+        <h3 id="services" class="jumptarget">Services</h3>
+        <section class="services_container">
+          <div class="services_item">
+            <p>Landscape Construction</p>
+            <picture>
+              <source
+                data-srcset="/images/IMG_1179_300.webp 300w, 
 								/images/IMG_1179_400.webp 400w,
 								/images/IMG_1179_500.webp 500w,
 								/images/IMG_1179_600.webp 600w,
@@ -82,10 +106,11 @@
 								/images/IMG_1179_1000.webp 1000w,
 								/images/IMG_1179_1500.webp 1500w,
 								/images/IMG_1179_2000.webp 2000w"
+                type="image/webp"
+              />
 
-							type="image/webp">
-
-							<source data-srcset="/images/IMG_1179_300.jpg 300w, 
+              <source
+                data-srcset="/images/IMG_1179_300.jpg 300w, 
 								/images/IMG_1179_400.jpg 400w,
 								/images/IMG_1179_500.jpg 500w,
 								/images/IMG_1179_600.jpg 600w,
@@ -95,19 +120,22 @@
 								/images/IMG_1179_1000.jpg 1000w,
 								/images/IMG_1179_1500.jpg 1500w,
 								/images/IMG_1179_2000.jpg 2000w"
+                type="image/jpg"
+              />
 
-							type="image/jpg">
-
-							<img data-sizes="auto" 
-								data-src="images/IMG_1179_500.jpg" 
-								alt="1179" 
-								class="lazyload">
-						</picture>
-					</div>
-					<div class="services_item">
-						<p>Irrigation Instalation</p>
-						<picture>
-							<source data-srcset="/images/IMG_1202_300.webp 300w, 
+              <img
+                data-sizes="auto"
+                data-src="images/IMG_1179_500.jpg"
+                alt="1179"
+                class="lazyload"
+              />
+            </picture>
+          </div>
+          <div class="services_item">
+            <p>Irrigation Instalation</p>
+            <picture>
+              <source
+                data-srcset="/images/IMG_1202_300.webp 300w, 
 								/images/IMG_1202_400.webp 400w,
 								/images/IMG_1202_500.webp 500w,
 								/images/IMG_1202_600.webp 600w,
@@ -117,10 +145,11 @@
 								/images/IMG_1202_1000.webp 1000w,
 								/images/IMG_1202_1500.webp 1500w,
 								/images/IMG_1202_2000.webp 2000w"
+                type="image/webp"
+              />
 
-							type="image/webp">
-
-							<source data-srcset="/images/IMG_1202_300.jpg 300w, 
+              <source
+                data-srcset="/images/IMG_1202_300.jpg 300w, 
 								/images/IMG_1202_400.jpg 400w,
 								/images/IMG_1202_500.jpg 500w,
 								/images/IMG_1202_600.jpg 600w,
@@ -130,19 +159,22 @@
 								/images/IMG_1202_1000.jpg 1000w,
 								/images/IMG_1202_1500.jpg 1500w,
 								/images/IMG_1202_2000.jpg 2000w"
+                type="image/jpg"
+              />
 
-							type="image/jpg">
-
-							<img data-sizes="auto" 
-								data-src="images/IMG_1202_500.jpg" 
-								alt="1202" 
-								class="lazyload">
-						</picture>
-					</div>
-					<div class="services_item">
-						<p>Out Door Lighting Instalation</p>
-						<picture>
-							<source data-srcset="/images/IMG_1162_300.webp 300w, 
+              <img
+                data-sizes="auto"
+                data-src="images/IMG_1202_500.jpg"
+                alt="1202"
+                class="lazyload"
+              />
+            </picture>
+          </div>
+          <div class="services_item">
+            <p>Out Door Lighting Instalation</p>
+            <picture>
+              <source
+                data-srcset="/images/IMG_1162_300.webp 300w, 
 								/images/IMG_1162_400.webp 400w,
 								/images/IMG_1162_500.webp 500w,
 								/images/IMG_1162_600.webp 600w,
@@ -152,10 +184,11 @@
 								/images/IMG_1162_1000.webp 1000w,
 								/images/IMG_1162_1500.webp 1500w,
 								/images/IMG_1162_2000.webp 2000w"
+                type="image/webp"
+              />
 
-							type="image/webp">
-
-							<source data-srcset="/images/IMG_1162_300.jpg 300w, 
+              <source
+                data-srcset="/images/IMG_1162_300.jpg 300w, 
 								/images/IMG_1162_400.jpg 400w,
 								/images/IMG_1162_500.jpg 500w,
 								/images/IMG_1162_600.jpg 600w,
@@ -165,19 +198,22 @@
 								/images/IMG_1162_1000.jpg 1000w,
 								/images/IMG_1162_1500.jpg 1500w,
 								/images/IMG_1162_2000.jpg 2000w"
+                type="image/jpg"
+              />
 
-							type="image/jpg">
-
-							<img data-sizes="auto" 
-								data-src="images/IMG_1162_500.jpg" 
-								alt="1162" 
-								class="lazyload">
-						</picture>
-					</div>
-					<div class="services_item">
-						<p>Palm Tree and Tree Treamming and Removal</p>
-						<picture>
-							<source data-srcset="/images/IMG_0939_resized_300.webp 300w, 
+              <img
+                data-sizes="auto"
+                data-src="images/IMG_1162_500.jpg"
+                alt="1162"
+                class="lazyload"
+              />
+            </picture>
+          </div>
+          <div class="services_item">
+            <p>Palm Tree and Tree Treamming and Removal</p>
+            <picture>
+              <source
+                data-srcset="/images/IMG_0939_resized_300.webp 300w, 
 								/images/IMG_0939_resized_400.webp 400w,
 								/images/IMG_0939_resized_500.webp 500w,
 								/images/IMG_0939_resized_600.webp 600w,
@@ -187,10 +223,11 @@
 								/images/IMG_0939_resized_1000.webp 1000w,
 								/images/IMG_0939_resized_1500.webp 1500w,
 								/images/IMG_0939_resized_2000.webp 2000w"
+                type="image/webp"
+              />
 
-							type="image/webp">
-
-							<source data-srcset="/images/IMG_0939_resized_300.jpg 300w, 
+              <source
+                data-srcset="/images/IMG_0939_resized_300.jpg 300w, 
 								/images/IMG_0939_resized_400.jpg 400w,
 								/images/IMG_0939_resized_500.jpg 500w,
 								/images/IMG_0939_resized_600.jpg 600w,
@@ -200,19 +237,22 @@
 								/images/IMG_0939_resized_1000.jpg 1000w,
 								/images/IMG_0939_resized_1500.jpg 1500w,
 								/images/IMG_0939_resized_2000.jpg 2000w"
+                type="image/jpg"
+              />
 
-							type="image/jpg">
-
-							<img data-sizes="auto" 
-								data-src="images/IMG_0939_resized_500.jpg" 
-								alt="0939" 
-								class="lazyload">
-						</picture>
-					</div>
-					<div class="services_item">
-						<p>Demolition and Hauling-Concrete, Dirt, Asphalt</p>
-						<picture>
-							<source data-srcset="/images/IMG_1165_300.webp 300w, 
+              <img
+                data-sizes="auto"
+                data-src="images/IMG_0939_resized_500.jpg"
+                alt="0939"
+                class="lazyload"
+              />
+            </picture>
+          </div>
+          <div class="services_item">
+            <p>Demolition and Hauling-Concrete, Dirt, Asphalt</p>
+            <picture>
+              <source
+                data-srcset="/images/IMG_1165_300.webp 300w, 
 								/images/IMG_1165_400.webp 400w,
 								/images/IMG_1165_500.webp 500w,
 								/images/IMG_1165_600.webp 600w,
@@ -222,10 +262,11 @@
 								/images/IMG_1165_1000.webp 1000w,
 								/images/IMG_1165_1500.webp 1500w,
 								/images/IMG_1165_2000.webp 2000w"
+                type="image/webp"
+              />
 
-							type="image/webp">
-
-							<source data-srcset="/images/IMG_1165_300.jpg 300w, 
+              <source
+                data-srcset="/images/IMG_1165_300.jpg 300w, 
 								/images/IMG_1165_400.jpg 400w,
 								/images/IMG_1165_500.jpg 500w,
 								/images/IMG_1165_600.jpg 600w,
@@ -235,19 +276,22 @@
 								/images/IMG_1165_1000.jpg 1000w,
 								/images/IMG_1165_1500.jpg 1500w,
 								/images/IMG_1165_2000.jpg 2000w"
+                type="image/jpg"
+              />
 
-							type="image/jpg">
-
-							<img data-sizes="auto" 
-								data-src="images/IMG_1165_500.jpg" 
-								alt="1165" 
-								class="lazyload">
-						</picture>
-					</div>
-					<div class="services_item">
-						<p>Landscape Maintanance</p>
-						<picture>
-							<source data-srcset="/images/IMG_1184_300.webp 300w, 
+              <img
+                data-sizes="auto"
+                data-src="images/IMG_1165_500.jpg"
+                alt="1165"
+                class="lazyload"
+              />
+            </picture>
+          </div>
+          <div class="services_item">
+            <p>Landscape Maintanance</p>
+            <picture>
+              <source
+                data-srcset="/images/IMG_1184_300.webp 300w, 
 								/images/IMG_1184_400.webp 400w,
 								/images/IMG_1184_500.webp 500w,
 								/images/IMG_1184_600.webp 600w,
@@ -257,10 +301,11 @@
 								/images/IMG_1184_1000.webp 1000w,
 								/images/IMG_1184_1500.webp 1500w,
 								/images/IMG_1184_2000.webp 2000w"
+                type="image/webp"
+              />
 
-							type="image/webp">
-
-							<source data-srcset="/images/IMG_1184_300.jpg 300w, 
+              <source
+                data-srcset="/images/IMG_1184_300.jpg 300w, 
 								/images/IMG_1184_400.jpg 400w,
 								/images/IMG_1184_500.jpg 500w,
 								/images/IMG_1184_600.jpg 600w,
@@ -270,19 +315,22 @@
 								/images/IMG_1184_1000.jpg 1000w,
 								/images/IMG_1184_1500.jpg 1500w,
 								/images/IMG_1184_2000.jpg 2000w"
+                type="image/jpg"
+              />
 
-							type="image/jpg">
-
-							<img data-sizes="auto" 
-								data-src="images/IMG_1184_500.jpg" 
-								alt="1184" 
-								class="lazyload">
-						</picture>
-					</div>
-					<div class="services_item">
-						<p>Lawn Seeding</p>
-						<picture>
-							<source data-srcset="/images/IMG_1093_300.webp 300w, 
+              <img
+                data-sizes="auto"
+                data-src="images/IMG_1184_500.jpg"
+                alt="1184"
+                class="lazyload"
+              />
+            </picture>
+          </div>
+          <div class="services_item">
+            <p>Lawn Seeding</p>
+            <picture>
+              <source
+                data-srcset="/images/IMG_1093_300.webp 300w, 
 								/images/IMG_1093_400.webp 400w,
 								/images/IMG_1093_500.webp 500w,
 								/images/IMG_1093_600.webp 600w,
@@ -292,10 +340,11 @@
 								/images/IMG_1093_1000.webp 1000w,
 								/images/IMG_1093_1500.webp 1500w,
 								/images/IMG_1093_2000.webp 2000w"
+                type="image/webp"
+              />
 
-							type="image/webp">
-
-							<source data-srcset="/images/IMG_1093_300.jpg 300w, 
+              <source
+                data-srcset="/images/IMG_1093_300.jpg 300w, 
 								/images/IMG_1093_400.jpg 400w,
 								/images/IMG_1093_500.jpg 500w,
 								/images/IMG_1093_600.jpg 600w,
@@ -305,2060 +354,2444 @@
 								/images/IMG_1093_1000.jpg 1000w,
 								/images/IMG_1093_1500.jpg 1500w,
 								/images/IMG_1093_2000.jpg 2000w"
+                type="image/jpg"
+              />
 
-							type="image/jpg">
+              <img
+                data-sizes="auto"
+                data-src="images/IMG_1093_500.jpg"
+                alt="1093"
+                class="lazyload"
+              />
+            </picture>
+          </div>
+        </section>
 
-							<img data-sizes="auto" 
-								data-src="images/IMG_1093_500.jpg" 
-								alt="1093" 
-								class="lazyload">
-						</picture>
-					</div>
-				</section>
-
-				<h3 id="gallery" class="jumptarget">Work Gallery</h3>
-				<section class="gallery_container gallery">
-					<div class="gallery_item">
-						<a href="images/IMG_0472.jpg" data-caption="0472"
-							data-at-300="images/IMG_0472_300.jpg"
-							data-at-400="images/IMG_0472_400.jpg"
-							data-at-500="images/IMG_0472_500.jpg"
-							data-at-600="images/IMG_0472_600.jpg"
-							data-at-700="images/IMG_0472_700.jpg"
-							data-at-800="images/IMG_0472_800.jpg"
-							data-at-800="images/IMG_0472_900.jpg"
-							data-at-1000="images/IMG_0472_1000.jpg"
-							data-at-1500="images/IMG_0472_1500.jpg"
-							data-at-2000="images/IMG_0472_2000.jpg">
-
-							<picture>
-								<source data-srcset="/images/IMG_0472_300.webp 300w, 
+        <h3 id="gallery" class="jumptarget">Work Gallery</h3>
+        <section class="gallery_container gallery">
+          <div class="gallery_item">
+            <a
+              href="images/IMG_0472.jpg"
+              data-caption="0472"
+              data-at-300="images/IMG_0472_300.jpg"
+              data-at-400="images/IMG_0472_400.jpg"
+              data-at-500="images/IMG_0472_500.jpg"
+              data-at-600="images/IMG_0472_600.jpg"
+              data-at-700="images/IMG_0472_700.jpg"
+              data-at-800="images/IMG_0472_800.jpg"
+              data-at-800="images/IMG_0472_900.jpg"
+              data-at-1000="images/IMG_0472_1000.jpg"
+              data-at-1500="images/IMG_0472_1500.jpg"
+              data-at-2000="images/IMG_0472_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_0472_300.webp 300w, 
 									/images/IMG_0472_400.webp 400w,
 									/images/IMG_0472_500.webp 500w,
 									/images/IMG_0472_600.webp 600w,
 									/images/IMG_0472_700.webp 700w,
 									/images/IMG_0472_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_0472_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_0472_300.jpg 300w, 
 									/images/IMG_0472_400.jpg 400w,
 									/images/IMG_0472_500.jpg 500w,
 									/images/IMG_0472_600.jpg 600w,
 									/images/IMG_0472_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-src="images/IMG_0472_300.jpg"
+                  data-sizes="auto"
+                  alt="0472"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-src="images/IMG_0472_300.jpg" 
-									data-sizes="auto"
-									alt="0472" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_0531.jpg" data-caption="0531"
-							data-at-300="images/IMG_0531_300.jpg"
-							data-at-400="images/IMG_0531_400.jpg"
-							data-at-500="images/IMG_0531_500.jpg"
-							data-at-600="images/IMG_0531_600.jpg"
-							data-at-700="images/IMG_0531_700.jpg"
-							data-at-800="images/IMG_0531_800.jpg"
-							data-at-900="images/IMG_0531_900.jpg"
-							data-at-1000="images/IMG_0531_1000.jpg"
-							data-at-1500="images/IMG_0531_1500.jpg"
-							data-at-2000="images/IMG_0531_2000.jpg">
-
-							<picture>
-								<source data-srcset="/images/IMG_0531_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_0531.jpg"
+              data-caption="0531"
+              data-at-300="images/IMG_0531_300.jpg"
+              data-at-400="images/IMG_0531_400.jpg"
+              data-at-500="images/IMG_0531_500.jpg"
+              data-at-600="images/IMG_0531_600.jpg"
+              data-at-700="images/IMG_0531_700.jpg"
+              data-at-800="images/IMG_0531_800.jpg"
+              data-at-900="images/IMG_0531_900.jpg"
+              data-at-1000="images/IMG_0531_1000.jpg"
+              data-at-1500="images/IMG_0531_1500.jpg"
+              data-at-2000="images/IMG_0531_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_0531_300.webp 300w, 
 									/images/IMG_0531_400.webp 400w,
 									/images/IMG_0531_500.webp 500w,
 									/images/IMG_0531_600.webp 600w,
 									/images/IMG_0531_700.webp 700w,
 									/images/IMG_0531_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_0531_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_0531_300.jpg 300w, 
 									/images/IMG_0531_400.jpg 400w,
 									/images/IMG_0531_500.jpg 500w,
 									/images/IMG_0531_600.jpg 600w,
 									/images/IMG_0531_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_0531_300.jpg"
+                  alt="0531"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_0531_300.jpg" 
-									alt="0531" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item" >
-						<a href="images/IMG_0745.jpg" data-caption="0745"
-							data-at-300="images/IMG_0745_300.jpg"
-							data-at-400="images/IMG_0745_400.jpg"
-							data-at-500="images/IMG_0745_500.jpg"
-							data-at-600="images/IMG_0745_600.jpg"
-							data-at-700="images/IMG_0745_700.jpg"
-							data-at-800="images/IMG_0745_800.jpg"
-							data-at-900="images/IMG_0745_900.jpg"
-							data-at-1000="images/IMG_0745_1000.jpg"
-							data-at-1500="images/IMG_0745_1500.jpg"
-							data-at-2000="images/IMG_0745_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_0745_resized_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_0745.jpg"
+              data-caption="0745"
+              data-at-300="images/IMG_0745_300.jpg"
+              data-at-400="images/IMG_0745_400.jpg"
+              data-at-500="images/IMG_0745_500.jpg"
+              data-at-600="images/IMG_0745_600.jpg"
+              data-at-700="images/IMG_0745_700.jpg"
+              data-at-800="images/IMG_0745_800.jpg"
+              data-at-900="images/IMG_0745_900.jpg"
+              data-at-1000="images/IMG_0745_1000.jpg"
+              data-at-1500="images/IMG_0745_1500.jpg"
+              data-at-2000="images/IMG_0745_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_0745_resized_300.webp 300w, 
 									/images/IMG_0745_resized_400.webp 400w,
 									/images/IMG_0745_resized_500.webp 500w,
 									/images/IMG_0745_resized_600.webp 600w,
 									/images/IMG_0745_resized_700.webp 700w,
 									/images/IMG_0745_resized_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_0745_resized_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_0745_resized_300.jpg 300w, 
 									/images/IMG_0745_resized_400.jpg 400w,
 									/images/IMG_0745_resized_500.jpg 500w,
 									/images/IMG_0745_resized_600.jpg 600w,
 									/images/IMG_0745_resized_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_0745_resized_300.jpg"
+                  alt="0745"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_0745_resized_300.jpg" 
-									alt="0745" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item" >
-						<a href="images/IMG_0747.jpg" data-caption="0747"
-							data-at-300="images/IMG_0747_300.jpg"
-							data-at-400="images/IMG_0747_400.jpg"
-							data-at-500="images/IMG_0747_500.jpg"
-							data-at-600="images/IMG_0747_600.jpg"
-							data-at-700="images/IMG_0747_700.jpg"
-							data-at-800="images/IMG_0747_800.jpg"
-							data-at-900="images/IMG_0747_900.jpg"
-							data-at-1000="images/IMG_0747_1000.jpg"
-							data-at-1500="images/IMG_0747_1500.jpg"
-							data-at-2000="images/IMG_0747_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_0747_resized_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_0747.jpg"
+              data-caption="0747"
+              data-at-300="images/IMG_0747_300.jpg"
+              data-at-400="images/IMG_0747_400.jpg"
+              data-at-500="images/IMG_0747_500.jpg"
+              data-at-600="images/IMG_0747_600.jpg"
+              data-at-700="images/IMG_0747_700.jpg"
+              data-at-800="images/IMG_0747_800.jpg"
+              data-at-900="images/IMG_0747_900.jpg"
+              data-at-1000="images/IMG_0747_1000.jpg"
+              data-at-1500="images/IMG_0747_1500.jpg"
+              data-at-2000="images/IMG_0747_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_0747_resized_300.webp 300w, 
 									/images/IMG_0747_resized_400.webp 400w,
 									/images/IMG_0747_resized_500.webp 500w,
 									/images/IMG_0747_resized_600.webp 600w,
 									/images/IMG_0747_resized_700.webp 700w,
 									/images/IMG_0747_resized_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_0747_resized_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_0747_resized_300.jpg 300w, 
 									/images/IMG_0747_resized_400.jpg 400w,
 									/images/IMG_0747_resized_500.jpg 500w,
 									/images/IMG_0747_resized_600.jpg 600w,
 									/images/IMG_0747_resized_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_0747_resized_300.jpg"
+                  alt="0747"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_0747_resized_300.jpg" 
-									alt="0747" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item" >
-						<a href="images/IMG_0874.jpg" data-caption="0874"
-							data-at-300="images/IMG_0874_300.jpg"
-							data-at-400="images/IMG_0874_400.jpg"
-							data-at-500="images/IMG_0874_500.jpg"
-							data-at-600="images/IMG_0874_600.jpg"
-							data-at-700="images/IMG_0874_700.jpg"
-							data-at-800="images/IMG_0874_800.jpg"
-							data-at-900="images/IMG_0874_900.jpg"
-							data-at-1000="images/IMG_0874_1000.jpg"
-							data-at-1500="images/IMG_0874_1500.jpg"
-							data-at-2000="images/IMG_0874_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_0874_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_0874.jpg"
+              data-caption="0874"
+              data-at-300="images/IMG_0874_300.jpg"
+              data-at-400="images/IMG_0874_400.jpg"
+              data-at-500="images/IMG_0874_500.jpg"
+              data-at-600="images/IMG_0874_600.jpg"
+              data-at-700="images/IMG_0874_700.jpg"
+              data-at-800="images/IMG_0874_800.jpg"
+              data-at-900="images/IMG_0874_900.jpg"
+              data-at-1000="images/IMG_0874_1000.jpg"
+              data-at-1500="images/IMG_0874_1500.jpg"
+              data-at-2000="images/IMG_0874_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_0874_300.webp 300w, 
 									/images/IMG_0874_400.webp 400w,
 									/images/IMG_0874_500.webp 500w,
 									/images/IMG_0874_600.webp 600w,
 									/images/IMG_0874_700.webp 700w,
 									/images/IMG_0874_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_0874_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_0874_300.jpg 300w, 
 									/images/IMG_0874_400.jpg 400w,
 									/images/IMG_0874_500.jpg 500w,
 									/images/IMG_0874_600.jpg 600w,
 									/images/IMG_0874_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_0874_300.jpg"
+                  alt="0874"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_0874_300.jpg" 
-									alt="0874" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item" >
-						<a href="images/IMG_0889.jpg" data-caption="0889"
-							data-at-300="images/IMG_0889_300.jpg"
-							data-at-400="images/IMG_0889_400.jpg"
-							data-at-500="images/IMG_0889_500.jpg"
-							data-at-600="images/IMG_0889_600.jpg"
-							data-at-700="images/IMG_0889_700.jpg"
-							data-at-800="images/IMG_0889_800.jpg"
-							data-at-900="images/IMG_0889_900.jpg"
-							data-at-1000="images/IMG_0889_1000.jpg"
-							data-at-1500="images/IMG_0889_1500.jpg"
-							data-at-2000="images/IMG_0889_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_0889_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_0889.jpg"
+              data-caption="0889"
+              data-at-300="images/IMG_0889_300.jpg"
+              data-at-400="images/IMG_0889_400.jpg"
+              data-at-500="images/IMG_0889_500.jpg"
+              data-at-600="images/IMG_0889_600.jpg"
+              data-at-700="images/IMG_0889_700.jpg"
+              data-at-800="images/IMG_0889_800.jpg"
+              data-at-900="images/IMG_0889_900.jpg"
+              data-at-1000="images/IMG_0889_1000.jpg"
+              data-at-1500="images/IMG_0889_1500.jpg"
+              data-at-2000="images/IMG_0889_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_0889_300.webp 300w, 
 									/images/IMG_0889_400.webp 400w,
 									/images/IMG_0889_500.webp 500w,
 									/images/IMG_0889_600.webp 600w,
 									/images/IMG_0889_700.webp 700w,
 									/images/IMG_0889_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_0889_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_0889_300.jpg 300w, 
 									/images/IMG_0889_400.jpg 400w,
 									/images/IMG_0889_500.jpg 500w,
 									/images/IMG_0889_600.jpg 600w,
 									/images/IMG_0889_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_0889_300.jpg"
+                  alt="0889"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_0889_300.jpg" 
-									alt="0889" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item" >
-						<a href="images/IMG_0939.jpg" data-caption="0939"
-							data-at-300="images/IMG_0939_300.jpg"
-							data-at-400="images/IMG_0939_400.jpg"
-							data-at-500="images/IMG_0939_500.jpg"
-							data-at-600="images/IMG_0939_600.jpg"
-							data-at-700="images/IMG_0939_700.jpg"
-							data-at-800="images/IMG_0939_800.jpg"
-							data-at-900="images/IMG_0939_900.jpg"
-							data-at-1000="images/IMG_0939_1000.jpg"
-							data-at-1500="images/IMG_0939_1500.jpg"
-							data-at-2000="images/IMG_0939_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_0939_resized_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_0939.jpg"
+              data-caption="0939"
+              data-at-300="images/IMG_0939_300.jpg"
+              data-at-400="images/IMG_0939_400.jpg"
+              data-at-500="images/IMG_0939_500.jpg"
+              data-at-600="images/IMG_0939_600.jpg"
+              data-at-700="images/IMG_0939_700.jpg"
+              data-at-800="images/IMG_0939_800.jpg"
+              data-at-900="images/IMG_0939_900.jpg"
+              data-at-1000="images/IMG_0939_1000.jpg"
+              data-at-1500="images/IMG_0939_1500.jpg"
+              data-at-2000="images/IMG_0939_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_0939_resized_300.webp 300w, 
 									/images/IMG_0939_resized_400.webp 400w,
 									/images/IMG_0939_resized_500.webp 500w,
 									/images/IMG_0939_resized_600.webp 600w,
 									/images/IMG_0939_resized_700.webp 700w,
 									/images/IMG_0939_resized_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_0939_resized_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_0939_resized_300.jpg 300w, 
 									/images/IMG_0939_resized_400.jpg 400w,
 									/images/IMG_0939_resized_500.jpg 500w,
 									/images/IMG_0939_resized_600.jpg 600w,
 									/images/IMG_0939_resized_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_0939_resized_300.jpg"
+                  alt="0531"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_0939_resized_300.jpg" 
-									alt="0531" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item" >
-						<a href="images/IMG_1093.jpg" data-caption="1093"
-							data-at-300="images/IMG_1093_300.jpg"
-							data-at-400="images/IMG_1093_400.jpg"
-							data-at-500="images/IMG_1093_500.jpg"
-							data-at-600="images/IMG_1093_600.jpg"
-							data-at-700="images/IMG_1093_700.jpg"
-							data-at-800="images/IMG_1093_800.jpg"
-							data-at-900="images/IMG_1093_900.jpg"
-							data-at-1000="images/IMG_1093_1000.jpg"
-							data-at-1500="images/IMG_1093_1500.jpg"
-							data-at-2000="images/IMG_1093_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1093_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1093.jpg"
+              data-caption="1093"
+              data-at-300="images/IMG_1093_300.jpg"
+              data-at-400="images/IMG_1093_400.jpg"
+              data-at-500="images/IMG_1093_500.jpg"
+              data-at-600="images/IMG_1093_600.jpg"
+              data-at-700="images/IMG_1093_700.jpg"
+              data-at-800="images/IMG_1093_800.jpg"
+              data-at-900="images/IMG_1093_900.jpg"
+              data-at-1000="images/IMG_1093_1000.jpg"
+              data-at-1500="images/IMG_1093_1500.jpg"
+              data-at-2000="images/IMG_1093_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1093_300.webp 300w, 
 									/images/IMG_1093_400.webp 400w,
 									/images/IMG_1093_500.webp 500w,
 									/images/IMG_1093_600.webp 600w,
 									/images/IMG_1093_700.webp 700w,
 									/images/IMG_1093_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1093_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1093_300.jpg 300w, 
 									/images/IMG_1093_400.jpg 400w,
 									/images/IMG_1093_500.jpg 500w,
 									/images/IMG_1093_600.jpg 600w,
 									/images/IMG_1093_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1093_300.jpg"
+                  alt="1093"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1093_300.jpg" 
-									alt="1093" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1122.jpg" data-caption="1122"
-							data-at-300="images/IMG_1122_300.jpg"
-							data-at-400="images/IMG_1122_400.jpg"
-							data-at-500="images/IMG_1122_500.jpg"
-							data-at-600="images/IMG_1122_600.jpg"
-							data-at-700="images/IMG_1122_700.jpg"
-							data-at-800="images/IMG_1122_800.jpg"
-							data-at-900="images/IMG_1122_900.jpg"
-							data-at-1000="images/IMG_1122_1000.jpg"
-							data-at-1500="images/IMG_1122_1500.jpg"
-							data-at-2000="images/IMG_1122_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1122_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1122.jpg"
+              data-caption="1122"
+              data-at-300="images/IMG_1122_300.jpg"
+              data-at-400="images/IMG_1122_400.jpg"
+              data-at-500="images/IMG_1122_500.jpg"
+              data-at-600="images/IMG_1122_600.jpg"
+              data-at-700="images/IMG_1122_700.jpg"
+              data-at-800="images/IMG_1122_800.jpg"
+              data-at-900="images/IMG_1122_900.jpg"
+              data-at-1000="images/IMG_1122_1000.jpg"
+              data-at-1500="images/IMG_1122_1500.jpg"
+              data-at-2000="images/IMG_1122_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1122_300.webp 300w, 
 									/images/IMG_1122_400.webp 400w,
 									/images/IMG_1122_500.webp 500w,
 									/images/IMG_1122_600.webp 600w,
 									/images/IMG_1122_700.webp 700w,
 									/images/IMG_1122_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1122_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1122_300.jpg 300w, 
 									/images/IMG_1122_400.jpg 400w,
 									/images/IMG_1122_500.jpg 500w,
 									/images/IMG_1122_600.jpg 600w,
 									/images/IMG_1122_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1122_300.jpg"
+                  alt="1122"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1122_300.jpg" 
-									alt="1122" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1124.jpg" data-caption="1124"
-							data-at-300="images/IMG_1124_300.jpg"
-							data-at-400="images/IMG_1124_400.jpg"
-							data-at-500="images/IMG_1124_500.jpg"
-							data-at-600="images/IMG_1124_600.jpg"
-							data-at-700="images/IMG_1124_700.jpg"
-							data-at-800="images/IMG_1124_800.jpg"
-							data-at-900="images/IMG_1124_900.jpg"
-							data-at-1000="images/IMG_1124_1000.jpg"
-							data-at-1500="images/IMG_1124_1500.jpg"
-							data-at-2000="images/IMG_1124_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1124_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1124.jpg"
+              data-caption="1124"
+              data-at-300="images/IMG_1124_300.jpg"
+              data-at-400="images/IMG_1124_400.jpg"
+              data-at-500="images/IMG_1124_500.jpg"
+              data-at-600="images/IMG_1124_600.jpg"
+              data-at-700="images/IMG_1124_700.jpg"
+              data-at-800="images/IMG_1124_800.jpg"
+              data-at-900="images/IMG_1124_900.jpg"
+              data-at-1000="images/IMG_1124_1000.jpg"
+              data-at-1500="images/IMG_1124_1500.jpg"
+              data-at-2000="images/IMG_1124_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1124_300.webp 300w, 
 									/images/IMG_1124_400.webp 400w,
 									/images/IMG_1124_500.webp 500w,
 									/images/IMG_1124_600.webp 600w,
 									/images/IMG_1124_700.webp 700w,
 									/images/IMG_1124_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1124_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1124_300.jpg 300w, 
 									/images/IMG_1124_400.jpg 400w,
 									/images/IMG_1124_500.jpg 500w,
 									/images/IMG_1124_600.jpg 600w,
 									/images/IMG_1124_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1124_300.jpg"
+                  alt="1124"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1124_300.jpg" 
-									alt="1124" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1126.jpg" data-caption="1126"
-							data-at-300="images/IMG_1126_300.jpg"
-							data-at-400="images/IMG_1126_400.jpg"
-							data-at-500="images/IMG_1126_500.jpg"
-							data-at-600="images/IMG_1126_600.jpg"
-							data-at-700="images/IMG_1126_700.jpg"
-							data-at-800="images/IMG_1126_800.jpg"
-							data-at-900="images/IMG_1126_900.jpg"
-							data-at-1000="images/IMG_1126_1000.jpg"
-							data-at-1500="images/IMG_1126_1500.jpg"
-							data-at-2000="images/IMG_1126_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1126_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1126.jpg"
+              data-caption="1126"
+              data-at-300="images/IMG_1126_300.jpg"
+              data-at-400="images/IMG_1126_400.jpg"
+              data-at-500="images/IMG_1126_500.jpg"
+              data-at-600="images/IMG_1126_600.jpg"
+              data-at-700="images/IMG_1126_700.jpg"
+              data-at-800="images/IMG_1126_800.jpg"
+              data-at-900="images/IMG_1126_900.jpg"
+              data-at-1000="images/IMG_1126_1000.jpg"
+              data-at-1500="images/IMG_1126_1500.jpg"
+              data-at-2000="images/IMG_1126_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1126_300.webp 300w, 
 									/images/IMG_1126_400.webp 400w,
 									/images/IMG_1126_500.webp 500w,
 									/images/IMG_1126_600.webp 600w,
 									/images/IMG_1126_700.webp 700w,
 									/images/IMG_1126_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1126_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1126_300.jpg 300w, 
 									/images/IMG_1126_400.jpg 400w,
 									/images/IMG_1126_500.jpg 500w,
 									/images/IMG_1126_600.jpg 600w,
 									/images/IMG_1126_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1126_300.jpg"
+                  alt="1126"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1126_300.jpg" 
-									alt="1126" 
-									class="lazyload">
-							</picture>
-						</a>	
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1139.jpg" data-caption="1139"
-							data-at-300="images/IMG_1139_300.jpg"
-							data-at-400="images/IMG_1139_400.jpg"
-							data-at-500="images/IMG_1139_500.jpg"
-							data-at-600="images/IMG_1139_600.jpg"
-							data-at-700="images/IMG_1139_700.jpg"
-							data-at-800="images/IMG_1139_800.jpg"
-							data-at-900="images/IMG_1139_900.jpg"
-							data-at-1000="images/IMG_1139_1000.jpg"
-							data-at-1500="images/IMG_1139_1500.jpg"
-							data-at-2000="images/IMG_1139_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1139_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1139.jpg"
+              data-caption="1139"
+              data-at-300="images/IMG_1139_300.jpg"
+              data-at-400="images/IMG_1139_400.jpg"
+              data-at-500="images/IMG_1139_500.jpg"
+              data-at-600="images/IMG_1139_600.jpg"
+              data-at-700="images/IMG_1139_700.jpg"
+              data-at-800="images/IMG_1139_800.jpg"
+              data-at-900="images/IMG_1139_900.jpg"
+              data-at-1000="images/IMG_1139_1000.jpg"
+              data-at-1500="images/IMG_1139_1500.jpg"
+              data-at-2000="images/IMG_1139_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1139_300.webp 300w, 
 									/images/IMG_1139_400.webp 400w,
 									/images/IMG_1139_500.webp 500w,
 									/images/IMG_1139_600.webp 600w,
 									/images/IMG_1139_700.webp 700w,
 									/images/IMG_1139_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1139_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1139_300.jpg 300w, 
 									/images/IMG_1139_400.jpg 400w,
 									/images/IMG_1139_500.jpg 500w,
 									/images/IMG_1139_600.jpg 600w,
 									/images/IMG_1139_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1139_300.jpg"
+                  alt="1139"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1139_300.jpg" 
-									alt="1139" 
-									class="lazyload">
-							</picture>
-						</a>
-						
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1150.jpg" data-caption="1150"
-							data-at-300="images/IMG_1150_300.jpg"
-							data-at-400="images/IMG_1150_400.jpg"
-							data-at-500="images/IMG_1150_500.jpg"
-							data-at-600="images/IMG_1150_600.jpg"
-							data-at-700="images/IMG_1150_700.jpg"
-							data-at-800="images/IMG_1150_800.jpg"
-							data-at-900="images/IMG_1150_900.jpg"
-							data-at-1000="images/IMG_1150_1000.jpg"
-							data-at-1500="images/IMG_1150_1500.jpg"
-							data-at-2000="images/IMG_1150_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1150_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1150.jpg"
+              data-caption="1150"
+              data-at-300="images/IMG_1150_300.jpg"
+              data-at-400="images/IMG_1150_400.jpg"
+              data-at-500="images/IMG_1150_500.jpg"
+              data-at-600="images/IMG_1150_600.jpg"
+              data-at-700="images/IMG_1150_700.jpg"
+              data-at-800="images/IMG_1150_800.jpg"
+              data-at-900="images/IMG_1150_900.jpg"
+              data-at-1000="images/IMG_1150_1000.jpg"
+              data-at-1500="images/IMG_1150_1500.jpg"
+              data-at-2000="images/IMG_1150_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1150_300.webp 300w, 
 									/images/IMG_1150_400.webp 400w,
 									/images/IMG_1150_500.webp 500w,
 									/images/IMG_1150_600.webp 600w,
 									/images/IMG_1150_700.webp 700w,
 									/images/IMG_1150_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1150_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1150_300.jpg 300w, 
 									/images/IMG_1150_400.jpg 400w,
 									/images/IMG_1150_500.jpg 500w,
 									/images/IMG_1150_600.jpg 600w,
 									/images/IMG_1150_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1150_300.jpg"
+                  alt="1150"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1150_300.jpg" 
-									alt="1150" 
-									class="lazyload">
-							</picture>
-						</a>
-						
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1154.jpg" data-caption="1154"
-							data-at-300="images/IMG_1154_300.jpg"
-							data-at-400="images/IMG_1154_400.jpg"
-							data-at-500="images/IMG_1154_500.jpg"
-							data-at-600="images/IMG_1154_600.jpg"
-							data-at-700="images/IMG_1154_700.jpg"
-							data-at-800="images/IMG_1154_800.jpg"
-							data-at-900="images/IMG_1154_900.jpg"
-							data-at-1000="images/IMG_1154_1000.jpg"
-							data-at-1500="images/IMG_1154_1500.jpg"
-							data-at-2000="images/IMG_1154_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1154_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1154.jpg"
+              data-caption="1154"
+              data-at-300="images/IMG_1154_300.jpg"
+              data-at-400="images/IMG_1154_400.jpg"
+              data-at-500="images/IMG_1154_500.jpg"
+              data-at-600="images/IMG_1154_600.jpg"
+              data-at-700="images/IMG_1154_700.jpg"
+              data-at-800="images/IMG_1154_800.jpg"
+              data-at-900="images/IMG_1154_900.jpg"
+              data-at-1000="images/IMG_1154_1000.jpg"
+              data-at-1500="images/IMG_1154_1500.jpg"
+              data-at-2000="images/IMG_1154_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1154_300.webp 300w, 
 									/images/IMG_1154_400.webp 400w,
 									/images/IMG_1154_500.webp 500w,
 									/images/IMG_1154_600.webp 600w,
 									/images/IMG_1154_700.webp 700w,
 									/images/IMG_1154_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1154_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1154_300.jpg 300w, 
 									/images/IMG_1154_400.jpg 400w,
 									/images/IMG_1154_500.jpg 500w,
 									/images/IMG_1154_600.jpg 600w,
 									/images/IMG_1154_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1154_300.jpg"
+                  alt="1154"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1154_300.jpg" 
-									alt="1154" 
-									class="lazyload">
-							</picture>
-						</a>
-						
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1156.jpg" data-caption="1156"
-							data-at-300="images/IMG_1156_300.jpg"
-							data-at-400="images/IMG_1156_400.jpg"
-							data-at-500="images/IMG_1156_500.jpg"
-							data-at-600="images/IMG_1156_600.jpg"
-							data-at-700="images/IMG_1156_700.jpg"
-							data-at-800="images/IMG_1156_800.jpg"
-							data-at-900="images/IMG_1156_900.jpg"
-							data-at-1000="images/IMG_1156_1000.jpg"
-							data-at-1500="images/IMG_1156_1500.jpg"
-							data-at-2000="images/IMG_1156_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1156_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1156.jpg"
+              data-caption="1156"
+              data-at-300="images/IMG_1156_300.jpg"
+              data-at-400="images/IMG_1156_400.jpg"
+              data-at-500="images/IMG_1156_500.jpg"
+              data-at-600="images/IMG_1156_600.jpg"
+              data-at-700="images/IMG_1156_700.jpg"
+              data-at-800="images/IMG_1156_800.jpg"
+              data-at-900="images/IMG_1156_900.jpg"
+              data-at-1000="images/IMG_1156_1000.jpg"
+              data-at-1500="images/IMG_1156_1500.jpg"
+              data-at-2000="images/IMG_1156_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1156_300.webp 300w, 
 									/images/IMG_1156_400.webp 400w,
 									/images/IMG_1156_500.webp 500w,
 									/images/IMG_1156_600.webp 600w,
 									/images/IMG_1156_700.webp 700w,
 									/images/IMG_1156_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1156_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1156_300.jpg 300w, 
 									/images/IMG_1156_400.jpg 400w,
 									/images/IMG_1156_500.jpg 500w,
 									/images/IMG_1156_600.jpg 600w,
 									/images/IMG_1156_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1156_300.jpg"
+                  alt="1156"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1156_300.jpg" 
-									alt="1156" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1157.jpg" data-caption="1157"
-							data-at-300="images/IMG_1157_300.jpg"
-							data-at-400="images/IMG_1157_400.jpg"
-							data-at-500="images/IMG_1157_500.jpg"
-							data-at-600="images/IMG_1157_600.jpg"
-							data-at-700="images/IMG_1157_700.jpg"
-							data-at-800="images/IMG_1157_800.jpg"
-							data-at-900="images/IMG_1157_900.jpg"
-							data-at-1000="images/IMG_1157_1000.jpg"
-							data-at-1500="images/IMG_1157_1500.jpg"
-							data-at-2000="images/IMG_1157_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1157_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1157.jpg"
+              data-caption="1157"
+              data-at-300="images/IMG_1157_300.jpg"
+              data-at-400="images/IMG_1157_400.jpg"
+              data-at-500="images/IMG_1157_500.jpg"
+              data-at-600="images/IMG_1157_600.jpg"
+              data-at-700="images/IMG_1157_700.jpg"
+              data-at-800="images/IMG_1157_800.jpg"
+              data-at-900="images/IMG_1157_900.jpg"
+              data-at-1000="images/IMG_1157_1000.jpg"
+              data-at-1500="images/IMG_1157_1500.jpg"
+              data-at-2000="images/IMG_1157_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1157_300.webp 300w, 
 									/images/IMG_1157_400.webp 400w,
 									/images/IMG_1157_500.webp 500w,
 									/images/IMG_1157_600.webp 600w,
 									/images/IMG_1157_700.webp 700w,
 									/images/IMG_1157_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1157_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1157_300.jpg 300w, 
 									/images/IMG_1157_400.jpg 400w,
 									/images/IMG_1157_500.jpg 500w,
 									/images/IMG_1157_600.jpg 600w,
 									/images/IMG_1157_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1157_300.jpg"
+                  alt="1157"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1157_300.jpg" 
-									alt="1157" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-							<a href="images/IMG_1158.jpg" data-caption="1158"
-							data-at-300="images/IMG_1158_300.jpg"
-							data-at-400="images/IMG_1158_400.jpg"
-							data-at-500="images/IMG_1158_500.jpg"
-							data-at-600="images/IMG_1158_600.jpg"
-							data-at-700="images/IMG_1158_700.jpg"
-							data-at-800="images/IMG_1158_800.jpg"
-							data-at-900="images/IMG_1158_900.jpg"
-							data-at-1000="images/IMG_1158_1000.jpg"
-							data-at-1500="images/IMG_1158_1500.jpg"
-							data-at-2000="images/IMG_1158_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1158_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1158.jpg"
+              data-caption="1158"
+              data-at-300="images/IMG_1158_300.jpg"
+              data-at-400="images/IMG_1158_400.jpg"
+              data-at-500="images/IMG_1158_500.jpg"
+              data-at-600="images/IMG_1158_600.jpg"
+              data-at-700="images/IMG_1158_700.jpg"
+              data-at-800="images/IMG_1158_800.jpg"
+              data-at-900="images/IMG_1158_900.jpg"
+              data-at-1000="images/IMG_1158_1000.jpg"
+              data-at-1500="images/IMG_1158_1500.jpg"
+              data-at-2000="images/IMG_1158_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1158_300.webp 300w, 
 									/images/IMG_1158_400.webp 400w,
 									/images/IMG_1158_500.webp 500w,
 									/images/IMG_1158_600.webp 600w,
 									/images/IMG_1158_700.webp 700w,
 									/images/IMG_1158_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1158_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1158_300.jpg 300w, 
 									/images/IMG_1158_400.jpg 400w,
 									/images/IMG_1158_500.jpg 500w,
 									/images/IMG_1158_600.jpg 600w,
 									/images/IMG_1158_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1158_300.jpg"
+                  alt="1158"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1158_300.jpg" 
-									alt="1158" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1161.jpg" data-caption="1161"
-							data-at-300="images/IMG_1161_300.jpg"
-							data-at-400="images/IMG_1161_400.jpg"
-							data-at-500="images/IMG_1161_500.jpg"
-							data-at-600="images/IMG_1161_600.jpg"
-							data-at-700="images/IMG_1161_700.jpg"
-							data-at-800="images/IMG_1161_800.jpg"
-							data-at-900="images/IMG_1161_900.jpg"
-							data-at-1000="images/IMG_1161_1000.jpg"
-							data-at-1500="images/IMG_1161_1500.jpg"
-							data-at-2000="images/IMG_1161_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1161_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1161.jpg"
+              data-caption="1161"
+              data-at-300="images/IMG_1161_300.jpg"
+              data-at-400="images/IMG_1161_400.jpg"
+              data-at-500="images/IMG_1161_500.jpg"
+              data-at-600="images/IMG_1161_600.jpg"
+              data-at-700="images/IMG_1161_700.jpg"
+              data-at-800="images/IMG_1161_800.jpg"
+              data-at-900="images/IMG_1161_900.jpg"
+              data-at-1000="images/IMG_1161_1000.jpg"
+              data-at-1500="images/IMG_1161_1500.jpg"
+              data-at-2000="images/IMG_1161_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1161_300.webp 300w, 
 									/images/IMG_1161_400.webp 400w,
 									/images/IMG_1161_500.webp 500w,
 									/images/IMG_1161_600.webp 600w,
 									/images/IMG_1161_700.webp 700w,
 									/images/IMG_1161_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1161_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1161_300.jpg 300w, 
 									/images/IMG_1161_400.jpg 400w,
 									/images/IMG_1161_500.jpg 500w,
 									/images/IMG_1161_600.jpg 600w,
 									/images/IMG_1161_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1161_300.jpg"
+                  alt="1161"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1161_300.jpg" 
-									alt="1161" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1162.jpg" data-caption="1162"
-							data-at-300="images/IMG_1162_300.jpg"
-							data-at-400="images/IMG_1162_400.jpg"
-							data-at-500="images/IMG_1162_500.jpg"
-							data-at-600="images/IMG_1162_600.jpg"
-							data-at-700="images/IMG_1162_700.jpg"
-							data-at-800="images/IMG_1162_800.jpg"
-							data-at-900="images/IMG_1162_900.jpg"
-							data-at-1000="images/IMG_1162_1000.jpg"
-							data-at-1500="images/IMG_1162_1500.jpg"
-							data-at-2000="images/IMG_1162_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1162_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1162.jpg"
+              data-caption="1162"
+              data-at-300="images/IMG_1162_300.jpg"
+              data-at-400="images/IMG_1162_400.jpg"
+              data-at-500="images/IMG_1162_500.jpg"
+              data-at-600="images/IMG_1162_600.jpg"
+              data-at-700="images/IMG_1162_700.jpg"
+              data-at-800="images/IMG_1162_800.jpg"
+              data-at-900="images/IMG_1162_900.jpg"
+              data-at-1000="images/IMG_1162_1000.jpg"
+              data-at-1500="images/IMG_1162_1500.jpg"
+              data-at-2000="images/IMG_1162_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1162_300.webp 300w, 
 									/images/IMG_1162_400.webp 400w,
 									/images/IMG_1162_500.webp 500w,
 									/images/IMG_1162_600.webp 600w,
 									/images/IMG_1162_700.webp 700w,
 									/images/IMG_1162_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1162_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1162_300.jpg 300w, 
 									/images/IMG_1162_400.jpg 400w,
 									/images/IMG_1162_500.jpg 500w,
 									/images/IMG_1162_600.jpg 600w,
 									/images/IMG_1162_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1162_300.jpg"
+                  alt="1162"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1162_300.jpg" 
-									alt="1162" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1163.jpg" data-caption="1163"
-							data-at-300="images/IMG_1163_300.jpg"
-							data-at-400="images/IMG_1163_400.jpg"
-							data-at-500="images/IMG_1163_500.jpg"
-							data-at-600="images/IMG_1163_600.jpg"
-							data-at-700="images/IMG_1163_700.jpg"
-							data-at-800="images/IMG_1163_800.jpg"
-							data-at-900="images/IMG_1163_900.jpg"
-							data-at-1000="images/IMG_1163_1000.jpg"
-							data-at-1500="images/IMG_1163_1500.jpg"
-							data-at-2000="images/IMG_1163_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1163_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1163.jpg"
+              data-caption="1163"
+              data-at-300="images/IMG_1163_300.jpg"
+              data-at-400="images/IMG_1163_400.jpg"
+              data-at-500="images/IMG_1163_500.jpg"
+              data-at-600="images/IMG_1163_600.jpg"
+              data-at-700="images/IMG_1163_700.jpg"
+              data-at-800="images/IMG_1163_800.jpg"
+              data-at-900="images/IMG_1163_900.jpg"
+              data-at-1000="images/IMG_1163_1000.jpg"
+              data-at-1500="images/IMG_1163_1500.jpg"
+              data-at-2000="images/IMG_1163_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1163_300.webp 300w, 
 									/images/IMG_1163_400.webp 400w,
 									/images/IMG_1163_500.webp 500w,
 									/images/IMG_1163_600.webp 600w,
 									/images/IMG_1163_700.webp 700w,
 									/images/IMG_1163_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1163_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1163_300.jpg 300w, 
 									/images/IMG_1163_400.jpg 400w,
 									/images/IMG_1163_500.jpg 500w,
 									/images/IMG_1163_600.jpg 600w,
 									/images/IMG_1163_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1163_300.jpg"
+                  alt="1163"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1163_300.jpg" 
-									alt="1163" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1164.jpg" data-caption="1164"
-							data-at-300="images/IMG_1164_300.jpg"
-							data-at-400="images/IMG_1164_400.jpg"
-							data-at-500="images/IMG_1164_500.jpg"
-							data-at-600="images/IMG_1164_600.jpg"
-							data-at-700="images/IMG_1164_700.jpg"
-							data-at-800="images/IMG_1164_800.jpg"
-							data-at-900="images/IMG_1164_900.jpg"
-							data-at-1000="images/IMG_1164_1000.jpg"
-							data-at-1500="images/IMG_1164_1500.jpg"
-							data-at-2000="images/IMG_1164_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1164_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1164.jpg"
+              data-caption="1164"
+              data-at-300="images/IMG_1164_300.jpg"
+              data-at-400="images/IMG_1164_400.jpg"
+              data-at-500="images/IMG_1164_500.jpg"
+              data-at-600="images/IMG_1164_600.jpg"
+              data-at-700="images/IMG_1164_700.jpg"
+              data-at-800="images/IMG_1164_800.jpg"
+              data-at-900="images/IMG_1164_900.jpg"
+              data-at-1000="images/IMG_1164_1000.jpg"
+              data-at-1500="images/IMG_1164_1500.jpg"
+              data-at-2000="images/IMG_1164_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1164_300.webp 300w, 
 									/images/IMG_1164_400.webp 400w,
 									/images/IMG_1164_500.webp 500w,
 									/images/IMG_1164_600.webp 600w,
 									/images/IMG_1164_700.webp 700w,
 									/images/IMG_1164_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1164_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1164_300.jpg 300w, 
 									/images/IMG_1164_400.jpg 400w,
 									/images/IMG_1164_500.jpg 500w,
 									/images/IMG_1164_600.jpg 600w,
 									/images/IMG_1164_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1164_300.jpg"
+                  alt="1164"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1164_300.jpg" 
-									alt="1164" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1165.jpg" data-caption="1165"
-							data-at-300="images/IMG_1165_300.jpg"
-							data-at-400="images/IMG_1165_400.jpg"
-							data-at-500="images/IMG_1165_500.jpg"
-							data-at-600="images/IMG_1165_600.jpg"
-							data-at-700="images/IMG_1165_700.jpg"
-							data-at-800="images/IMG_1165_800.jpg"
-							data-at-900="images/IMG_1165_900.jpg"
-							data-at-1000="images/IMG_1165_1000.jpg"
-							data-at-1500="images/IMG_1165_1500.jpg"
-							data-at-2000="images/IMG_1165_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1165_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1165.jpg"
+              data-caption="1165"
+              data-at-300="images/IMG_1165_300.jpg"
+              data-at-400="images/IMG_1165_400.jpg"
+              data-at-500="images/IMG_1165_500.jpg"
+              data-at-600="images/IMG_1165_600.jpg"
+              data-at-700="images/IMG_1165_700.jpg"
+              data-at-800="images/IMG_1165_800.jpg"
+              data-at-900="images/IMG_1165_900.jpg"
+              data-at-1000="images/IMG_1165_1000.jpg"
+              data-at-1500="images/IMG_1165_1500.jpg"
+              data-at-2000="images/IMG_1165_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1165_300.webp 300w, 
 									/images/IMG_1165_400.webp 400w,
 									/images/IMG_1165_500.webp 500w,
 									/images/IMG_1165_600.webp 600w,
 									/images/IMG_1165_700.webp 700w,
 									/images/IMG_1165_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1165_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1165_300.jpg 300w, 
 									/images/IMG_1165_400.jpg 400w,
 									/images/IMG_1165_500.jpg 500w,
 									/images/IMG_1165_600.jpg 600w,
 									/images/IMG_1165_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1165_300.jpg"
+                  alt="1165"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1165_300.jpg" 
-									alt="1165" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1166.jpg" data-caption="1166"
-							data-at-300="images/IMG_1166_300.jpg"
-							data-at-400="images/IMG_1166_400.jpg"
-							data-at-500="images/IMG_1166_500.jpg"
-							data-at-600="images/IMG_1166_600.jpg"
-							data-at-700="images/IMG_1166_700.jpg"
-							data-at-800="images/IMG_1166_800.jpg"
-							data-at-900="images/IMG_1166_900.jpg"
-							data-at-1000="images/IMG_1166_1000.jpg"
-							data-at-1500="images/IMG_1166_1500.jpg"
-							data-at-2000="images/IMG_1166_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1166_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1166.jpg"
+              data-caption="1166"
+              data-at-300="images/IMG_1166_300.jpg"
+              data-at-400="images/IMG_1166_400.jpg"
+              data-at-500="images/IMG_1166_500.jpg"
+              data-at-600="images/IMG_1166_600.jpg"
+              data-at-700="images/IMG_1166_700.jpg"
+              data-at-800="images/IMG_1166_800.jpg"
+              data-at-900="images/IMG_1166_900.jpg"
+              data-at-1000="images/IMG_1166_1000.jpg"
+              data-at-1500="images/IMG_1166_1500.jpg"
+              data-at-2000="images/IMG_1166_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1166_300.webp 300w, 
 									/images/IMG_1166_400.webp 400w,
 									/images/IMG_1166_500.webp 500w,
 									/images/IMG_1166_600.webp 600w,
 									/images/IMG_1166_700.webp 700w,
 									/images/IMG_1166_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1166_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1166_300.jpg 300w, 
 									/images/IMG_1166_400.jpg 400w,
 									/images/IMG_1166_500.jpg 500w,
 									/images/IMG_1166_600.jpg 600w,
 									/images/IMG_1166_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1166_300.jpg"
+                  alt="1166"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1166_300.jpg" 
-									alt="1166" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1167.jpg" data-caption="1167"
-							data-at-300="images/IMG_1167_300.jpg"
-							data-at-400="images/IMG_1167_400.jpg"
-							data-at-500="images/IMG_1167_500.jpg"
-							data-at-600="images/IMG_1167_600.jpg"
-							data-at-700="images/IMG_1167_700.jpg"
-							data-at-800="images/IMG_1167_800.jpg"
-							data-at-900="images/IMG_1167_900.jpg"
-							data-at-1000="images/IMG_1167_1000.jpg"
-							data-at-1500="images/IMG_1167_1500.jpg"
-							data-at-2000="images/IMG_1167_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1167_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1167.jpg"
+              data-caption="1167"
+              data-at-300="images/IMG_1167_300.jpg"
+              data-at-400="images/IMG_1167_400.jpg"
+              data-at-500="images/IMG_1167_500.jpg"
+              data-at-600="images/IMG_1167_600.jpg"
+              data-at-700="images/IMG_1167_700.jpg"
+              data-at-800="images/IMG_1167_800.jpg"
+              data-at-900="images/IMG_1167_900.jpg"
+              data-at-1000="images/IMG_1167_1000.jpg"
+              data-at-1500="images/IMG_1167_1500.jpg"
+              data-at-2000="images/IMG_1167_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1167_300.webp 300w, 
 									/images/IMG_1167_400.webp 400w,
 									/images/IMG_1167_500.webp 500w,
 									/images/IMG_1167_600.webp 600w,
 									/images/IMG_1167_700.webp 700w,
 									/images/IMG_1167_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1167_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1167_300.jpg 300w, 
 									/images/IMG_1167_400.jpg 400w,
 									/images/IMG_1167_500.jpg 500w,
 									/images/IMG_1167_600.jpg 600w,
 									/images/IMG_1167_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1167_300.jpg"
+                  alt="1167"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1167_300.jpg" 
-									alt="1167" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1168.jpg" data-caption="1168"
-							data-at-300="images/IMG_1168_300.jpg"
-							data-at-400="images/IMG_1168_400.jpg"
-							data-at-500="images/IMG_1168_500.jpg"
-							data-at-600="images/IMG_1168_600.jpg"
-							data-at-700="images/IMG_1168_700.jpg"
-							data-at-800="images/IMG_1168_800.jpg"
-							data-at-900="images/IMG_1168_900.jpg"
-							data-at-1000="images/IMG_1168_1000.jpg"
-							data-at-1500="images/IMG_1168_1500.jpg"
-							data-at-2000="images/IMG_1168_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1168_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1168.jpg"
+              data-caption="1168"
+              data-at-300="images/IMG_1168_300.jpg"
+              data-at-400="images/IMG_1168_400.jpg"
+              data-at-500="images/IMG_1168_500.jpg"
+              data-at-600="images/IMG_1168_600.jpg"
+              data-at-700="images/IMG_1168_700.jpg"
+              data-at-800="images/IMG_1168_800.jpg"
+              data-at-900="images/IMG_1168_900.jpg"
+              data-at-1000="images/IMG_1168_1000.jpg"
+              data-at-1500="images/IMG_1168_1500.jpg"
+              data-at-2000="images/IMG_1168_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1168_300.webp 300w, 
 									/images/IMG_1168_400.webp 400w,
 									/images/IMG_1168_500.webp 500w,
 									/images/IMG_1168_600.webp 600w,
 									/images/IMG_1168_700.webp 700w,
 									/images/IMG_1168_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1168_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1168_300.jpg 300w, 
 									/images/IMG_1168_400.jpg 400w,
 									/images/IMG_1168_500.jpg 500w,
 									/images/IMG_1168_600.jpg 600w,
 									/images/IMG_1168_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1168_300.jpg"
+                  alt="1168"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1168_300.jpg" 
-									alt="1168" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1169.jpg" data-caption="1169"
-							data-at-300="images/IMG_1169_300.jpg"
-							data-at-400="images/IMG_1169_400.jpg"
-							data-at-500="images/IMG_1169_500.jpg"
-							data-at-600="images/IMG_1169_600.jpg"
-							data-at-700="images/IMG_1169_700.jpg"
-							data-at-800="images/IMG_1169_800.jpg"
-							data-at-900="images/IMG_1169_900.jpg"
-							data-at-1000="images/IMG_1169_1000.jpg"
-							data-at-1500="images/IMG_1169_1500.jpg"
-							data-at-2000="images/IMG_1169_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1169_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1169.jpg"
+              data-caption="1169"
+              data-at-300="images/IMG_1169_300.jpg"
+              data-at-400="images/IMG_1169_400.jpg"
+              data-at-500="images/IMG_1169_500.jpg"
+              data-at-600="images/IMG_1169_600.jpg"
+              data-at-700="images/IMG_1169_700.jpg"
+              data-at-800="images/IMG_1169_800.jpg"
+              data-at-900="images/IMG_1169_900.jpg"
+              data-at-1000="images/IMG_1169_1000.jpg"
+              data-at-1500="images/IMG_1169_1500.jpg"
+              data-at-2000="images/IMG_1169_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1169_300.webp 300w, 
 									/images/IMG_1169_400.webp 400w,
 									/images/IMG_1169_500.webp 500w,
 									/images/IMG_1169_600.webp 600w,
 									/images/IMG_1169_700.webp 700w,
 									/images/IMG_1169_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1169_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1169_300.jpg 300w, 
 									/images/IMG_1169_400.jpg 400w,
 									/images/IMG_1169_500.jpg 500w,
 									/images/IMG_1169_600.jpg 600w,
 									/images/IMG_1169_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1169_300.jpg"
+                  alt="1169"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1169_300.jpg" 
-									alt="1169" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1170.jpg" data-caption="1170"
-							data-at-300="images/IMG_1170_300.jpg"
-							data-at-400="images/IMG_1170_400.jpg"
-							data-at-500="images/IMG_1170_500.jpg"
-							data-at-600="images/IMG_1170_600.jpg"
-							data-at-700="images/IMG_1170_700.jpg"
-							data-at-800="images/IMG_1170_800.jpg"
-							data-at-900="images/IMG_1170_900.jpg"
-							data-at-1000="images/IMG_1170_1000.jpg"
-							data-at-1500="images/IMG_1170_1500.jpg"
-							data-at-2000="images/IMG_1170_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1170_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1170.jpg"
+              data-caption="1170"
+              data-at-300="images/IMG_1170_300.jpg"
+              data-at-400="images/IMG_1170_400.jpg"
+              data-at-500="images/IMG_1170_500.jpg"
+              data-at-600="images/IMG_1170_600.jpg"
+              data-at-700="images/IMG_1170_700.jpg"
+              data-at-800="images/IMG_1170_800.jpg"
+              data-at-900="images/IMG_1170_900.jpg"
+              data-at-1000="images/IMG_1170_1000.jpg"
+              data-at-1500="images/IMG_1170_1500.jpg"
+              data-at-2000="images/IMG_1170_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1170_300.webp 300w, 
 									/images/IMG_1170_400.webp 400w,
 									/images/IMG_1170_500.webp 500w,
 									/images/IMG_1170_600.webp 600w,
 									/images/IMG_1170_700.webp 700w,
 									/images/IMG_1170_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1170_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1170_300.jpg 300w, 
 									/images/IMG_1170_400.jpg 400w,
 									/images/IMG_1170_500.jpg 500w,
 									/images/IMG_1170_600.jpg 600w,
 									/images/IMG_1170_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1170_300.jpg"
+                  alt="1170"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1170_300.jpg" 
-									alt="1170" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1171.jpg" data-caption="1171"
-							data-at-300="images/IMG_1171_300.jpg"
-							data-at-400="images/IMG_1171_400.jpg"
-							data-at-500="images/IMG_1171_500.jpg"
-							data-at-600="images/IMG_1171_600.jpg"
-							data-at-700="images/IMG_1171_700.jpg"
-							data-at-800="images/IMG_1171_800.jpg"
-							data-at-900="images/IMG_1171_900.jpg"
-							data-at-1000="images/IMG_1171_1000.jpg"
-							data-at-1500="images/IMG_1171_1500.jpg"
-							data-at-2000="images/IMG_1171_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1171_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1171.jpg"
+              data-caption="1171"
+              data-at-300="images/IMG_1171_300.jpg"
+              data-at-400="images/IMG_1171_400.jpg"
+              data-at-500="images/IMG_1171_500.jpg"
+              data-at-600="images/IMG_1171_600.jpg"
+              data-at-700="images/IMG_1171_700.jpg"
+              data-at-800="images/IMG_1171_800.jpg"
+              data-at-900="images/IMG_1171_900.jpg"
+              data-at-1000="images/IMG_1171_1000.jpg"
+              data-at-1500="images/IMG_1171_1500.jpg"
+              data-at-2000="images/IMG_1171_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1171_300.webp 300w, 
 									/images/IMG_1171_400.webp 400w,
 									/images/IMG_1171_500.webp 500w,
 									/images/IMG_1171_600.webp 600w,
 									/images/IMG_1171_700.webp 700w,
 									/images/IMG_1171_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1171_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1171_300.jpg 300w, 
 									/images/IMG_1171_400.jpg 400w,
 									/images/IMG_1171_500.jpg 500w,
 									/images/IMG_1171_600.jpg 600w,
 									/images/IMG_1171_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1171_300.jpg"
+                  alt="1171"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1171_300.jpg" 
-									alt="1171" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1172.jpg" data-caption="1172"
-							data-at-300="images/IMG_1172_300.jpg"
-							data-at-400="images/IMG_1172_400.jpg"
-							data-at-500="images/IMG_1172_500.jpg"
-							data-at-600="images/IMG_1172_600.jpg"
-							data-at-700="images/IMG_1172_700.jpg"
-							data-at-800="images/IMG_1172_800.jpg"
-							data-at-900="images/IMG_1172_900.jpg"
-							data-at-1000="images/IMG_1172_1000.jpg"
-							data-at-1500="images/IMG_1172_1500.jpg"
-							data-at-2000="images/IMG_1172_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1172_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1172.jpg"
+              data-caption="1172"
+              data-at-300="images/IMG_1172_300.jpg"
+              data-at-400="images/IMG_1172_400.jpg"
+              data-at-500="images/IMG_1172_500.jpg"
+              data-at-600="images/IMG_1172_600.jpg"
+              data-at-700="images/IMG_1172_700.jpg"
+              data-at-800="images/IMG_1172_800.jpg"
+              data-at-900="images/IMG_1172_900.jpg"
+              data-at-1000="images/IMG_1172_1000.jpg"
+              data-at-1500="images/IMG_1172_1500.jpg"
+              data-at-2000="images/IMG_1172_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1172_300.webp 300w, 
 									/images/IMG_1172_400.webp 400w,
 									/images/IMG_1172_500.webp 500w,
 									/images/IMG_1172_600.webp 600w,
 									/images/IMG_1172_700.webp 700w,
 									/images/IMG_1172_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1172_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1172_300.jpg 300w, 
 									/images/IMG_1172_400.jpg 400w,
 									/images/IMG_1172_500.jpg 500w,
 									/images/IMG_1172_600.jpg 600w,
 									/images/IMG_1172_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1172_300.jpg"
+                  alt="1172"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1172_300.jpg" 
-									alt="1172" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-	
-					<div class="gallery_item">
-						<a href="images/IMG_1173.jpg" data-caption="1173"
-							data-at-300="images/IMG_1173_300.jpg"
-							data-at-400="images/IMG_1173_400.jpg"
-							data-at-500="images/IMG_1173_500.jpg"
-							data-at-600="images/IMG_1173_600.jpg"
-							data-at-700="images/IMG_1173_700.jpg"
-							data-at-800="images/IMG_1173_800.jpg"
-							data-at-900="images/IMG_1173_900.jpg"
-							data-at-1000="images/IMG_1173_1000.jpg"
-							data-at-1500="images/IMG_1173_1500.jpg"
-							data-at-2000="images/IMG_1173_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1173_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1173.jpg"
+              data-caption="1173"
+              data-at-300="images/IMG_1173_300.jpg"
+              data-at-400="images/IMG_1173_400.jpg"
+              data-at-500="images/IMG_1173_500.jpg"
+              data-at-600="images/IMG_1173_600.jpg"
+              data-at-700="images/IMG_1173_700.jpg"
+              data-at-800="images/IMG_1173_800.jpg"
+              data-at-900="images/IMG_1173_900.jpg"
+              data-at-1000="images/IMG_1173_1000.jpg"
+              data-at-1500="images/IMG_1173_1500.jpg"
+              data-at-2000="images/IMG_1173_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1173_300.webp 300w, 
 									/images/IMG_1173_400.webp 400w,
 									/images/IMG_1173_500.webp 500w,
 									/images/IMG_1173_600.webp 600w,
 									/images/IMG_1173_700.webp 700w,
 									/images/IMG_1173_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1173_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1173_300.jpg 300w, 
 									/images/IMG_1173_400.jpg 400w,
 									/images/IMG_1173_500.jpg 500w,
 									/images/IMG_1173_600.jpg 600w,
 									/images/IMG_1173_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1173_300.jpg"
+                  alt="1173"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1173_300.jpg" 
-									alt="1173" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-			
-					<div class="gallery_item">
-						<a href="images/IMG_1174.jpg" data-caption="1174"
-							data-at-300="images/IMG_1174_300.jpg"
-							data-at-400="images/IMG_1174_400.jpg"
-							data-at-500="images/IMG_1174_500.jpg"
-							data-at-600="images/IMG_1174_600.jpg"
-							data-at-700="images/IMG_1174_700.jpg"
-							data-at-800="images/IMG_1174_800.jpg"
-							data-at-900="images/IMG_1174_900.jpg"
-							data-at-1000="images/IMG_1174_1000.jpg"
-							data-at-1500="images/IMG_1174_1500.jpg"
-							data-at-2000="images/IMG_1174_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1174_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1174.jpg"
+              data-caption="1174"
+              data-at-300="images/IMG_1174_300.jpg"
+              data-at-400="images/IMG_1174_400.jpg"
+              data-at-500="images/IMG_1174_500.jpg"
+              data-at-600="images/IMG_1174_600.jpg"
+              data-at-700="images/IMG_1174_700.jpg"
+              data-at-800="images/IMG_1174_800.jpg"
+              data-at-900="images/IMG_1174_900.jpg"
+              data-at-1000="images/IMG_1174_1000.jpg"
+              data-at-1500="images/IMG_1174_1500.jpg"
+              data-at-2000="images/IMG_1174_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1174_300.webp 300w, 
 									/images/IMG_1174_400.webp 400w,
 									/images/IMG_1174_500.webp 500w,
 									/images/IMG_1174_600.webp 600w,
 									/images/IMG_1174_700.webp 700w,
 									/images/IMG_1174_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1174_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1174_300.jpg 300w, 
 									/images/IMG_1174_400.jpg 400w,
 									/images/IMG_1174_500.jpg 500w,
 									/images/IMG_1174_600.jpg 600w,
 									/images/IMG_1174_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1174_300.jpg"
+                  alt="1174"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1174_300.jpg" 
-									alt="1174" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-	
-					<div class="gallery_item">
-						<a href="images/IMG_1175.jpg" data-caption="1175"
-							data-at-300="images/IMG_1175_300.jpg"
-							data-at-400="images/IMG_1175_400.jpg"
-							data-at-500="images/IMG_1175_500.jpg"
-							data-at-600="images/IMG_1175_600.jpg"
-							data-at-700="images/IMG_1175_700.jpg"
-							data-at-800="images/IMG_1175_800.jpg"
-							data-at-900="images/IMG_1175_900.jpg"
-							data-at-1000="images/IMG_1175_1000.jpg"
-							data-at-1500="images/IMG_1175_1500.jpg"
-							data-at-2000="images/IMG_1175_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1175_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1175.jpg"
+              data-caption="1175"
+              data-at-300="images/IMG_1175_300.jpg"
+              data-at-400="images/IMG_1175_400.jpg"
+              data-at-500="images/IMG_1175_500.jpg"
+              data-at-600="images/IMG_1175_600.jpg"
+              data-at-700="images/IMG_1175_700.jpg"
+              data-at-800="images/IMG_1175_800.jpg"
+              data-at-900="images/IMG_1175_900.jpg"
+              data-at-1000="images/IMG_1175_1000.jpg"
+              data-at-1500="images/IMG_1175_1500.jpg"
+              data-at-2000="images/IMG_1175_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1175_300.webp 300w, 
 									/images/IMG_1175_400.webp 400w,
 									/images/IMG_1175_500.webp 500w,
 									/images/IMG_1175_600.webp 600w,
 									/images/IMG_1175_700.webp 700w,
 									/images/IMG_1175_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1175_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1175_300.jpg 300w, 
 									/images/IMG_1175_400.jpg 400w,
 									/images/IMG_1175_500.jpg 500w,
 									/images/IMG_1175_600.jpg 600w,
 									/images/IMG_1175_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1175_300.jpg"
+                  alt="1175"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1175_300.jpg" 
-									alt="1175" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-	
-					<div class="gallery_item">
-						<a href="images/IMG_1176.jpg" data-caption="1176"
-							data-at-300="images/IMG_1176_300.jpg"
-							data-at-400="images/IMG_1176_400.jpg"
-							data-at-500="images/IMG_1176_500.jpg"
-							data-at-600="images/IMG_1176_600.jpg"
-							data-at-700="images/IMG_1176_700.jpg"
-							data-at-800="images/IMG_1176_800.jpg"
-							data-at-900="images/IMG_1176_900.jpg"
-							data-at-1000="images/IMG_1176_1000.jpg"
-							data-at-1500="images/IMG_1176_1500.jpg"
-							data-at-2000="images/IMG_1176_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1176_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1176.jpg"
+              data-caption="1176"
+              data-at-300="images/IMG_1176_300.jpg"
+              data-at-400="images/IMG_1176_400.jpg"
+              data-at-500="images/IMG_1176_500.jpg"
+              data-at-600="images/IMG_1176_600.jpg"
+              data-at-700="images/IMG_1176_700.jpg"
+              data-at-800="images/IMG_1176_800.jpg"
+              data-at-900="images/IMG_1176_900.jpg"
+              data-at-1000="images/IMG_1176_1000.jpg"
+              data-at-1500="images/IMG_1176_1500.jpg"
+              data-at-2000="images/IMG_1176_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1176_300.webp 300w, 
 									/images/IMG_1176_400.webp 400w,
 									/images/IMG_1176_500.webp 500w,
 									/images/IMG_1176_600.webp 600w,
 									/images/IMG_1176_700.webp 700w,
 									/images/IMG_1176_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1176_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1176_300.jpg 300w, 
 									/images/IMG_1176_400.jpg 400w,
 									/images/IMG_1176_500.jpg 500w,
 									/images/IMG_1176_600.jpg 600w,
 									/images/IMG_1176_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1176_300.jpg"
+                  alt="1176"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1176_300.jpg" 
-									alt="1176" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-	
-					<div class="gallery_item">
-						<a href="images/IMG_1177.jpg" data-caption="1177"
-							data-at-300="images/IMG_1177_300.jpg"
-							data-at-400="images/IMG_1177_400.jpg"
-							data-at-500="images/IMG_1177_500.jpg"
-							data-at-600="images/IMG_1177_600.jpg"
-							data-at-700="images/IMG_1177_700.jpg"
-							data-at-800="images/IMG_1177_800.jpg"
-							data-at-900="images/IMG_1177_900.jpg"
-							data-at-1000="images/IMG_1177_1000.jpg"
-							data-at-1500="images/IMG_1177_1500.jpg"
-							data-at-2000="images/IMG_1177_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1177_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1177.jpg"
+              data-caption="1177"
+              data-at-300="images/IMG_1177_300.jpg"
+              data-at-400="images/IMG_1177_400.jpg"
+              data-at-500="images/IMG_1177_500.jpg"
+              data-at-600="images/IMG_1177_600.jpg"
+              data-at-700="images/IMG_1177_700.jpg"
+              data-at-800="images/IMG_1177_800.jpg"
+              data-at-900="images/IMG_1177_900.jpg"
+              data-at-1000="images/IMG_1177_1000.jpg"
+              data-at-1500="images/IMG_1177_1500.jpg"
+              data-at-2000="images/IMG_1177_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1177_300.webp 300w, 
 									/images/IMG_1177_400.webp 400w,
 									/images/IMG_1177_500.webp 500w,
 									/images/IMG_1177_600.webp 600w,
 									/images/IMG_1177_700.webp 700w,
 									/images/IMG_1177_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1177_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1177_300.jpg 300w, 
 									/images/IMG_1177_400.jpg 400w,
 									/images/IMG_1177_500.jpg 500w,
 									/images/IMG_1177_600.jpg 600w,
 									/images/IMG_1177_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1177_300.jpg"
+                  alt="1177"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1177_300.jpg" 
-									alt="1177" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item" >
-						<a href="images/IMG_1179.jpg" data-caption="1179"
-							data-at-300="images/IMG_1179_300.jpg"
-							data-at-400="images/IMG_1179_400.jpg"
-							data-at-500="images/IMG_1179_500.jpg"
-							data-at-600="images/IMG_1179_600.jpg"
-							data-at-700="images/IMG_1179_700.jpg"
-							data-at-800="images/IMG_1179_800.jpg"
-							data-at-900="images/IMG_1179_900.jpg"
-							data-at-1000="images/IMG_1179_1000.jpg"
-							data-at-1500="images/IMG_1179_1500.jpg"
-							data-at-2000="images/IMG_1179_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1179_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1179.jpg"
+              data-caption="1179"
+              data-at-300="images/IMG_1179_300.jpg"
+              data-at-400="images/IMG_1179_400.jpg"
+              data-at-500="images/IMG_1179_500.jpg"
+              data-at-600="images/IMG_1179_600.jpg"
+              data-at-700="images/IMG_1179_700.jpg"
+              data-at-800="images/IMG_1179_800.jpg"
+              data-at-900="images/IMG_1179_900.jpg"
+              data-at-1000="images/IMG_1179_1000.jpg"
+              data-at-1500="images/IMG_1179_1500.jpg"
+              data-at-2000="images/IMG_1179_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1179_300.webp 300w, 
 									/images/IMG_1179_400.webp 400w,
 									/images/IMG_1179_500.webp 500w,
 									/images/IMG_1179_600.webp 600w,
 									/images/IMG_1179_700.webp 700w,
 									/images/IMG_1179_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1179_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1179_300.jpg 300w, 
 									/images/IMG_1179_400.jpg 400w,
 									/images/IMG_1179_500.jpg 500w,
 									/images/IMG_1179_600.jpg 600w,
 									/images/IMG_1179_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1179_300.jpg"
+                  alt="1179"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1179_300.jpg" 
-									alt="1179" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item" >
-						<a href="images/IMG_1181.jpg" data-caption="1181"
-							data-at-300="images/IMG_1181_300.jpg"
-							data-at-400="images/IMG_1181_400.jpg"
-							data-at-500="images/IMG_1181_500.jpg"
-							data-at-600="images/IMG_1181_600.jpg"
-							data-at-700="images/IMG_1181_700.jpg"
-							data-at-800="images/IMG_1181_800.jpg"
-							data-at-900="images/IMG_1181_900.jpg"
-							data-at-1000="images/IMG_1181_1000.jpg"
-							data-at-1500="images/IMG_1181_1500.jpg"
-							data-at-2000="images/IMG_1181_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1181_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1181.jpg"
+              data-caption="1181"
+              data-at-300="images/IMG_1181_300.jpg"
+              data-at-400="images/IMG_1181_400.jpg"
+              data-at-500="images/IMG_1181_500.jpg"
+              data-at-600="images/IMG_1181_600.jpg"
+              data-at-700="images/IMG_1181_700.jpg"
+              data-at-800="images/IMG_1181_800.jpg"
+              data-at-900="images/IMG_1181_900.jpg"
+              data-at-1000="images/IMG_1181_1000.jpg"
+              data-at-1500="images/IMG_1181_1500.jpg"
+              data-at-2000="images/IMG_1181_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1181_300.webp 300w, 
 									/images/IMG_1181_400.webp 400w,
 									/images/IMG_1181_500.webp 500w,
 									/images/IMG_1181_600.webp 600w,
 									/images/IMG_1181_700.webp 700w,
 									/images/IMG_1181_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1181_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1181_300.jpg 300w, 
 									/images/IMG_1181_400.jpg 400w,
 									/images/IMG_1181_500.jpg 500w,
 									/images/IMG_1181_600.jpg 600w,
 									/images/IMG_1181_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1181_300.jpg"
+                  alt="1181"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1181_300.jpg" 
-									alt="1181" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item" >
-						<a href="images/IMG_1184.jpg" data-caption="1184"
-							data-at-300="images/IMG_1184_300.jpg"
-							data-at-400="images/IMG_1184_400.jpg"
-							data-at-500="images/IMG_1184_500.jpg"
-							data-at-600="images/IMG_1184_600.jpg"
-							data-at-700="images/IMG_1184_700.jpg"
-							data-at-800="images/IMG_1184_800.jpg"
-							data-at-900="images/IMG_1184_900.jpg"
-							data-at-1000="images/IMG_1184_1000.jpg"
-							data-at-1500="images/IMG_1184_1500.jpg"
-							data-at-2000="images/IMG_1184_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1184_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1184.jpg"
+              data-caption="1184"
+              data-at-300="images/IMG_1184_300.jpg"
+              data-at-400="images/IMG_1184_400.jpg"
+              data-at-500="images/IMG_1184_500.jpg"
+              data-at-600="images/IMG_1184_600.jpg"
+              data-at-700="images/IMG_1184_700.jpg"
+              data-at-800="images/IMG_1184_800.jpg"
+              data-at-900="images/IMG_1184_900.jpg"
+              data-at-1000="images/IMG_1184_1000.jpg"
+              data-at-1500="images/IMG_1184_1500.jpg"
+              data-at-2000="images/IMG_1184_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1184_300.webp 300w, 
 									/images/IMG_1184_400.webp 400w,
 									/images/IMG_1184_500.webp 500w,
 									/images/IMG_1184_600.webp 600w,
 									/images/IMG_1184_700.webp 700w,
 									/images/IMG_1184_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1184_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1184_300.jpg 300w, 
 									/images/IMG_1184_400.jpg 400w,
 									/images/IMG_1184_500.jpg 500w,
 									/images/IMG_1184_600.jpg 600w,
 									/images/IMG_1184_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1184_300.jpg"
+                  alt="1184"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1184_300.jpg" 
-									alt="1184" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-		
-					<div class="gallery_item">
-						<a href="images/IMG_1186.jpg" data-caption="1186"
-							data-at-300="images/IMG_1186_300.jpg"
-							data-at-400="images/IMG_1186_400.jpg"
-							data-at-500="images/IMG_1186_500.jpg"
-							data-at-600="images/IMG_1186_600.jpg"
-							data-at-700="images/IMG_1186_700.jpg"
-							data-at-800="images/IMG_1186_800.jpg"
-							data-at-900="images/IMG_1186_900.jpg"
-							data-at-1000="images/IMG_1186_1000.jpg"
-							data-at-1500="images/IMG_1186_1500.jpg"
-							data-at-2000="images/IMG_1186_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1186_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1186.jpg"
+              data-caption="1186"
+              data-at-300="images/IMG_1186_300.jpg"
+              data-at-400="images/IMG_1186_400.jpg"
+              data-at-500="images/IMG_1186_500.jpg"
+              data-at-600="images/IMG_1186_600.jpg"
+              data-at-700="images/IMG_1186_700.jpg"
+              data-at-800="images/IMG_1186_800.jpg"
+              data-at-900="images/IMG_1186_900.jpg"
+              data-at-1000="images/IMG_1186_1000.jpg"
+              data-at-1500="images/IMG_1186_1500.jpg"
+              data-at-2000="images/IMG_1186_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1186_300.webp 300w, 
 									/images/IMG_1186_400.webp 400w,
 									/images/IMG_1186_500.webp 500w,
 									/images/IMG_1186_600.webp 600w,
 									/images/IMG_1186_700.webp 700w,
 									/images/IMG_1186_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1186_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1186_300.jpg 300w, 
 									/images/IMG_1186_400.jpg 400w,
 									/images/IMG_1186_500.jpg 500w,
 									/images/IMG_1186_600.jpg 600w,
 									/images/IMG_1186_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1186_300.jpg"
+                  alt="1186"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1186_300.jpg" 
-									alt="1186" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-		
-					<div class="gallery_item">
-						<a href="images/IMG_1187.jpg" data-caption="1187"
-							data-at-300="images/IMG_1187_300.jpg"
-							data-at-400="images/IMG_1187_400.jpg"
-							data-at-500="images/IMG_1187_500.jpg"
-							data-at-600="images/IMG_1187_600.jpg"
-							data-at-700="images/IMG_1187_700.jpg"
-							data-at-800="images/IMG_1187_800.jpg"
-							data-at-900="images/IMG_1187_900.jpg"
-							data-at-1000="images/IMG_1187_1000.jpg"
-							data-at-1500="images/IMG_1187_1500.jpg"
-							data-at-2000="images/IMG_1187_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1187_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1187.jpg"
+              data-caption="1187"
+              data-at-300="images/IMG_1187_300.jpg"
+              data-at-400="images/IMG_1187_400.jpg"
+              data-at-500="images/IMG_1187_500.jpg"
+              data-at-600="images/IMG_1187_600.jpg"
+              data-at-700="images/IMG_1187_700.jpg"
+              data-at-800="images/IMG_1187_800.jpg"
+              data-at-900="images/IMG_1187_900.jpg"
+              data-at-1000="images/IMG_1187_1000.jpg"
+              data-at-1500="images/IMG_1187_1500.jpg"
+              data-at-2000="images/IMG_1187_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1187_300.webp 300w, 
 									/images/IMG_1187_400.webp 400w,
 									/images/IMG_1187_500.webp 500w,
 									/images/IMG_1187_600.webp 600w,
 									/images/IMG_1187_700.webp 700w,
 									/images/IMG_1187_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1187_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1187_300.jpg 300w, 
 									/images/IMG_1187_400.jpg 400w,
 									/images/IMG_1187_500.jpg 500w,
 									/images/IMG_1187_600.jpg 600w,
 									/images/IMG_1187_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1187_300.jpg"
+                  alt="1187"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1187_300.jpg" 
-									alt="1187" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1188.jpg" data-caption="1188"
-							data-at-300="images/IMG_1188_300.jpg"
-							data-at-400="images/IMG_1188_400.jpg"
-							data-at-500="images/IMG_1188_500.jpg"
-							data-at-600="images/IMG_1188_600.jpg"
-							data-at-700="images/IMG_1188_700.jpg"
-							data-at-800="images/IMG_1188_800.jpg"
-							data-at-900="images/IMG_1188_900.jpg"
-							data-at-1000="images/IMG_1188_1000.jpg"
-							data-at-1500="images/IMG_1188_1500.jpg"
-							data-at-2000="images/IMG_1188_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1188_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1188.jpg"
+              data-caption="1188"
+              data-at-300="images/IMG_1188_300.jpg"
+              data-at-400="images/IMG_1188_400.jpg"
+              data-at-500="images/IMG_1188_500.jpg"
+              data-at-600="images/IMG_1188_600.jpg"
+              data-at-700="images/IMG_1188_700.jpg"
+              data-at-800="images/IMG_1188_800.jpg"
+              data-at-900="images/IMG_1188_900.jpg"
+              data-at-1000="images/IMG_1188_1000.jpg"
+              data-at-1500="images/IMG_1188_1500.jpg"
+              data-at-2000="images/IMG_1188_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1188_300.webp 300w, 
 									/images/IMG_1188_400.webp 400w,
 									/images/IMG_1188_500.webp 500w,
 									/images/IMG_1188_600.webp 600w,
 									/images/IMG_1188_700.webp 700w,
 									/images/IMG_1188_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1188_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1188_300.jpg 300w, 
 									/images/IMG_1188_400.jpg 400w,
 									/images/IMG_1188_500.jpg 500w,
 									/images/IMG_1188_600.jpg 600w,
 									/images/IMG_1188_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1188_300.jpg"
+                  alt="1188"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1188_300.jpg" 
-									alt="1188" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-	
-					<div class="gallery_item">
-						<a href="images/IMG_1189.jpg" data-caption="1189"
-							data-at-300="images/IMG_1189_300.jpg"
-							data-at-400="images/IMG_1189_400.jpg"
-							data-at-500="images/IMG_1189_500.jpg"
-							data-at-600="images/IMG_1189_600.jpg"
-							data-at-700="images/IMG_1189_700.jpg"
-							data-at-800="images/IMG_1189_800.jpg"
-							data-at-900="images/IMG_1189_900.jpg"
-							data-at-1000="images/IMG_1189_1000.jpg"
-							data-at-1500="images/IMG_1189_1500.jpg"
-							data-at-2000="images/IMG_1189_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1189_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1189.jpg"
+              data-caption="1189"
+              data-at-300="images/IMG_1189_300.jpg"
+              data-at-400="images/IMG_1189_400.jpg"
+              data-at-500="images/IMG_1189_500.jpg"
+              data-at-600="images/IMG_1189_600.jpg"
+              data-at-700="images/IMG_1189_700.jpg"
+              data-at-800="images/IMG_1189_800.jpg"
+              data-at-900="images/IMG_1189_900.jpg"
+              data-at-1000="images/IMG_1189_1000.jpg"
+              data-at-1500="images/IMG_1189_1500.jpg"
+              data-at-2000="images/IMG_1189_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1189_300.webp 300w, 
 									/images/IMG_1189_400.webp 400w,
 									/images/IMG_1189_500.webp 500w,
 									/images/IMG_1189_600.webp 600w,
 									/images/IMG_1189_700.webp 700w,
 									/images/IMG_1189_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1189_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1189_300.jpg 300w, 
 									/images/IMG_1189_400.jpg 400w,
 									/images/IMG_1189_500.jpg 500w,
 									/images/IMG_1189_600.jpg 600w,
 									/images/IMG_1189_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1189_300.jpg"
+                  alt="1189"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1189_300.jpg" 
-									alt="1189" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-	
-					<div class="gallery_item">
-						<a href="images/IMG_1190.jpg" data-caption="1190"
-							data-at-300="images/IMG_1190_300.jpg"
-							data-at-400="images/IMG_1190_400.jpg"
-							data-at-500="images/IMG_1190_500.jpg"
-							data-at-600="images/IMG_1190_600.jpg"
-							data-at-700="images/IMG_1190_700.jpg"
-							data-at-800="images/IMG_1190_800.jpg"
-							data-at-900="images/IMG_1190_900.jpg"
-							data-at-1000="images/IMG_1190_1000.jpg"
-							data-at-1500="images/IMG_1190_1500.jpg"
-							data-at-2000="images/IMG_1190_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1190_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1190.jpg"
+              data-caption="1190"
+              data-at-300="images/IMG_1190_300.jpg"
+              data-at-400="images/IMG_1190_400.jpg"
+              data-at-500="images/IMG_1190_500.jpg"
+              data-at-600="images/IMG_1190_600.jpg"
+              data-at-700="images/IMG_1190_700.jpg"
+              data-at-800="images/IMG_1190_800.jpg"
+              data-at-900="images/IMG_1190_900.jpg"
+              data-at-1000="images/IMG_1190_1000.jpg"
+              data-at-1500="images/IMG_1190_1500.jpg"
+              data-at-2000="images/IMG_1190_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1190_300.webp 300w, 
 									/images/IMG_1190_400.webp 400w,
 									/images/IMG_1190_500.webp 500w,
 									/images/IMG_1190_600.webp 600w,
 									/images/IMG_1190_700.webp 700w,
 									/images/IMG_1190_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1190_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1190_300.jpg 300w, 
 									/images/IMG_1190_400.jpg 400w,
 									/images/IMG_1190_500.jpg 500w,
 									/images/IMG_1190_600.jpg 600w,
 									/images/IMG_1190_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1190_300.jpg"
+                  alt="1190"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1190_300.jpg" 
-									alt="1190" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-	
-					<div class="gallery_item">
-						<a href="images/IMG_1191.jpg" data-caption="1191"
-							data-at-300="images/IMG_1191_300.jpg"
-							data-at-400="images/IMG_1191_400.jpg"
-							data-at-500="images/IMG_1191_500.jpg"
-							data-at-600="images/IMG_1191_600.jpg"
-							data-at-700="images/IMG_1191_700.jpg"
-							data-at-800="images/IMG_1191_800.jpg"
-							data-at-900="images/IMG_1191_900.jpg"
-							data-at-1000="images/IMG_1191_1000.jpg"
-							data-at-1500="images/IMG_1191_1500.jpg"
-							data-at-2000="images/IMG_1191_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1191_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1191.jpg"
+              data-caption="1191"
+              data-at-300="images/IMG_1191_300.jpg"
+              data-at-400="images/IMG_1191_400.jpg"
+              data-at-500="images/IMG_1191_500.jpg"
+              data-at-600="images/IMG_1191_600.jpg"
+              data-at-700="images/IMG_1191_700.jpg"
+              data-at-800="images/IMG_1191_800.jpg"
+              data-at-900="images/IMG_1191_900.jpg"
+              data-at-1000="images/IMG_1191_1000.jpg"
+              data-at-1500="images/IMG_1191_1500.jpg"
+              data-at-2000="images/IMG_1191_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1191_300.webp 300w, 
 									/images/IMG_1191_400.webp 400w,
 									/images/IMG_1191_500.webp 500w,
 									/images/IMG_1191_600.webp 600w,
 									/images/IMG_1191_700.webp 700w,
 									/images/IMG_1191_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1191_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1191_300.jpg 300w, 
 									/images/IMG_1191_400.jpg 400w,
 									/images/IMG_1191_500.jpg 500w,
 									/images/IMG_1191_600.jpg 600w,
 									/images/IMG_1191_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1191_300.jpg"
+                  alt="1191"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1191_300.jpg" 
-									alt="1191" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-		
-					<div class="gallery_item">
-						<a href="images/IMG_1193.jpg" data-caption="1193"
-							data-at-300="images/IMG_1193_300.jpg"
-							data-at-400="images/IMG_1193_400.jpg"
-							data-at-500="images/IMG_1193_500.jpg"
-							data-at-600="images/IMG_1193_600.jpg"
-							data-at-700="images/IMG_1193_700.jpg"
-							data-at-800="images/IMG_1193_800.jpg"
-							data-at-900="images/IMG_1193_900.jpg"
-							data-at-1000="images/IMG_1193_1000.jpg"
-							data-at-1500="images/IMG_1193_1500.jpg"
-							data-at-2000="images/IMG_1193_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1193_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1193.jpg"
+              data-caption="1193"
+              data-at-300="images/IMG_1193_300.jpg"
+              data-at-400="images/IMG_1193_400.jpg"
+              data-at-500="images/IMG_1193_500.jpg"
+              data-at-600="images/IMG_1193_600.jpg"
+              data-at-700="images/IMG_1193_700.jpg"
+              data-at-800="images/IMG_1193_800.jpg"
+              data-at-900="images/IMG_1193_900.jpg"
+              data-at-1000="images/IMG_1193_1000.jpg"
+              data-at-1500="images/IMG_1193_1500.jpg"
+              data-at-2000="images/IMG_1193_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1193_300.webp 300w, 
 									/images/IMG_1193_400.webp 400w,
 									/images/IMG_1193_500.webp 500w,
 									/images/IMG_1193_600.webp 600w,
 									/images/IMG_1193_700.webp 700w,
 									/images/IMG_1193_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1193_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1193_300.jpg 300w, 
 									/images/IMG_1193_400.jpg 400w,
 									/images/IMG_1193_500.jpg 500w,
 									/images/IMG_1193_600.jpg 600w,
 									/images/IMG_1193_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1193_300.jpg"
+                  alt="1193"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1193_300.jpg" 
-									alt="1193" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-		
-					<div class="gallery_item">
-						<a href="images/IMG_1194.jpg" data-caption="1194"
-							data-at-300="images/IMG_1194_300.jpg"
-							data-at-400="images/IMG_1194_400.jpg"
-							data-at-500="images/IMG_1194_500.jpg"
-							data-at-600="images/IMG_1194_600.jpg"
-							data-at-700="images/IMG_1194_700.jpg"
-							data-at-800="images/IMG_1194_800.jpg"
-							data-at-900="images/IMG_1194_900.jpg"
-							data-at-1000="images/IMG_1194_1000.jpg"
-							data-at-1500="images/IMG_1194_1500.jpg"
-							data-at-2000="images/IMG_1194_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1194_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1194.jpg"
+              data-caption="1194"
+              data-at-300="images/IMG_1194_300.jpg"
+              data-at-400="images/IMG_1194_400.jpg"
+              data-at-500="images/IMG_1194_500.jpg"
+              data-at-600="images/IMG_1194_600.jpg"
+              data-at-700="images/IMG_1194_700.jpg"
+              data-at-800="images/IMG_1194_800.jpg"
+              data-at-900="images/IMG_1194_900.jpg"
+              data-at-1000="images/IMG_1194_1000.jpg"
+              data-at-1500="images/IMG_1194_1500.jpg"
+              data-at-2000="images/IMG_1194_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1194_300.webp 300w, 
 									/images/IMG_1194_400.webp 400w,
 									/images/IMG_1194_500.webp 500w,
 									/images/IMG_1194_600.webp 600w,
 									/images/IMG_1194_700.webp 700w,
 									/images/IMG_1194_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1194_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1194_300.jpg 300w, 
 									/images/IMG_1194_400.jpg 400w,
 									/images/IMG_1194_500.jpg 500w,
 									/images/IMG_1194_600.jpg 600w,
 									/images/IMG_1194_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1194_300.jpg"
+                  alt="1194"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1194_300.jpg" 
-									alt="1194" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item">
-						<a href="images/IMG_1195.jpg" data-caption="1195"
-							data-at-300="images/IMG_1195_300.jpg"
-							data-at-400="images/IMG_1195_400.jpg"
-							data-at-500="images/IMG_1195_500.jpg"
-							data-at-600="images/IMG_1195_600.jpg"
-							data-at-700="images/IMG_1195_700.jpg"
-							data-at-800="images/IMG_1195_800.jpg"
-							data-at-900="images/IMG_1195_900.jpg"
-							data-at-1000="images/IMG_1195_1000.jpg"
-							data-at-1500="images/IMG_1195_1500.jpg"
-							data-at-2000="images/IMG_1195_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1195_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1195.jpg"
+              data-caption="1195"
+              data-at-300="images/IMG_1195_300.jpg"
+              data-at-400="images/IMG_1195_400.jpg"
+              data-at-500="images/IMG_1195_500.jpg"
+              data-at-600="images/IMG_1195_600.jpg"
+              data-at-700="images/IMG_1195_700.jpg"
+              data-at-800="images/IMG_1195_800.jpg"
+              data-at-900="images/IMG_1195_900.jpg"
+              data-at-1000="images/IMG_1195_1000.jpg"
+              data-at-1500="images/IMG_1195_1500.jpg"
+              data-at-2000="images/IMG_1195_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1195_300.webp 300w, 
 									/images/IMG_1195_400.webp 400w,
 									/images/IMG_1195_500.webp 500w,
 									/images/IMG_1195_600.webp 600w,
 									/images/IMG_1195_700.webp 700w,
 									/images/IMG_1195_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1195_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1195_300.jpg 300w, 
 									/images/IMG_1195_400.jpg 400w,
 									/images/IMG_1195_500.jpg 500w,
 									/images/IMG_1195_600.jpg 600w,
 									/images/IMG_1195_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1195_300.jpg"
+                  alt="1195"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1195_300.jpg" 
-									alt="1195" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item" >
-						<a href="images/IMG_1196.jpg" data-caption="1196"
-							data-at-300="images/IMG_1196_300.jpg"
-							data-at-400="images/IMG_1196_400.jpg"
-							data-at-500="images/IMG_1196_500.jpg"
-							data-at-600="images/IMG_1196_600.jpg"
-							data-at-700="images/IMG_1196_700.jpg"
-							data-at-800="images/IMG_1196_800.jpg"
-							data-at-900="images/IMG_1196_900.jpg"
-							data-at-1000="images/IMG_1196_1000.jpg"
-							data-at-1500="images/IMG_1196_1500.jpg"
-							data-at-2000="images/IMG_1196_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1196_resized_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1196.jpg"
+              data-caption="1196"
+              data-at-300="images/IMG_1196_300.jpg"
+              data-at-400="images/IMG_1196_400.jpg"
+              data-at-500="images/IMG_1196_500.jpg"
+              data-at-600="images/IMG_1196_600.jpg"
+              data-at-700="images/IMG_1196_700.jpg"
+              data-at-800="images/IMG_1196_800.jpg"
+              data-at-900="images/IMG_1196_900.jpg"
+              data-at-1000="images/IMG_1196_1000.jpg"
+              data-at-1500="images/IMG_1196_1500.jpg"
+              data-at-2000="images/IMG_1196_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1196_resized_300.webp 300w, 
 									/images/IMG_1196_resized_400.webp 400w,
 									/images/IMG_1196_resized_500.webp 500w,
 									/images/IMG_1196_resized_600.webp 600w,
 									/images/IMG_1196_resized_700.webp 700w,
 									/images/IMG_1196_resized_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1196_resized_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1196_resized_300.jpg 300w, 
 									/images/IMG_1196_resized_400.jpg 400w,
 									/images/IMG_1196_resized_500.jpg 500w,
 									/images/IMG_1196_resized_600.jpg 600w,
 									/images/IMG_1196_resized_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1196_resized_300.jpg"
+                  alt="1196_resized"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1196_resized_300.jpg" 
-									alt="1196_resized" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-	
-					<div class="gallery_item">
-						<a href="images/IMG_1198.jpg" data-caption="1198"
-							data-at-300="images/IMG_1198_300.jpg"
-							data-at-400="images/IMG_1198_400.jpg"
-							data-at-500="images/IMG_1198_500.jpg"
-							data-at-600="images/IMG_1198_600.jpg"
-							data-at-700="images/IMG_1198_700.jpg"
-							data-at-800="images/IMG_1198_800.jpg"
-							data-at-900="images/IMG_1198_900.jpg"
-							data-at-1000="images/IMG_1198_1000.jpg"
-							data-at-1500="images/IMG_1198_1500.jpg"
-							data-at-2000="images/IMG_1198_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1198_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1198.jpg"
+              data-caption="1198"
+              data-at-300="images/IMG_1198_300.jpg"
+              data-at-400="images/IMG_1198_400.jpg"
+              data-at-500="images/IMG_1198_500.jpg"
+              data-at-600="images/IMG_1198_600.jpg"
+              data-at-700="images/IMG_1198_700.jpg"
+              data-at-800="images/IMG_1198_800.jpg"
+              data-at-900="images/IMG_1198_900.jpg"
+              data-at-1000="images/IMG_1198_1000.jpg"
+              data-at-1500="images/IMG_1198_1500.jpg"
+              data-at-2000="images/IMG_1198_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1198_300.webp 300w, 
 									/images/IMG_1198_400.webp 400w,
 									/images/IMG_1198_500.webp 500w,
 									/images/IMG_1198_600.webp 600w,
 									/images/IMG_1198_700.webp 700w,
 									/images/IMG_1198_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1198_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1198_300.jpg 300w, 
 									/images/IMG_1198_400.jpg 400w,
 									/images/IMG_1198_500.jpg 500w,
 									/images/IMG_1198_600.jpg 600w,
 									/images/IMG_1198_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1198_300.jpg"
+                  alt="1198"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1198_300.jpg" 
-									alt="1198" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-	
-					<div class="gallery_item">
-						<a href="images/IMG_1199.jpg" data-caption="1199"
-							data-at-300="images/IMG_1199_300.jpg"
-							data-at-400="images/IMG_1199_400.jpg"
-							data-at-500="images/IMG_1199_500.jpg"
-							data-at-600="images/IMG_1199_600.jpg"
-							data-at-700="images/IMG_1199_700.jpg"
-							data-at-800="images/IMG_1199_800.jpg"
-							data-at-900="images/IMG_1199_900.jpg"
-							data-at-1000="images/IMG_1199_1000.jpg"
-							data-at-1500="images/IMG_1199_1500.jpg"
-							data-at-2000="images/IMG_1199_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1199_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1199.jpg"
+              data-caption="1199"
+              data-at-300="images/IMG_1199_300.jpg"
+              data-at-400="images/IMG_1199_400.jpg"
+              data-at-500="images/IMG_1199_500.jpg"
+              data-at-600="images/IMG_1199_600.jpg"
+              data-at-700="images/IMG_1199_700.jpg"
+              data-at-800="images/IMG_1199_800.jpg"
+              data-at-900="images/IMG_1199_900.jpg"
+              data-at-1000="images/IMG_1199_1000.jpg"
+              data-at-1500="images/IMG_1199_1500.jpg"
+              data-at-2000="images/IMG_1199_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1199_300.webp 300w, 
 									/images/IMG_1199_400.webp 400w,
 									/images/IMG_1199_500.webp 500w,
 									/images/IMG_1199_600.webp 600w,
 									/images/IMG_1199_700.webp 700w,
 									/images/IMG_1199_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1199_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1199_300.jpg 300w, 
 									/images/IMG_1199_400.jpg 400w,
 									/images/IMG_1199_500.jpg 500w,
 									/images/IMG_1199_600.jpg 600w,
 									/images/IMG_1199_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1199_300.jpg"
+                  alt="1199"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1199_300.jpg" 
-									alt="1199" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-	
-					<div class="gallery_item">
-						<a href="images/IMG_1200.jpg" data-caption="1200"
-							data-at-300="images/IMG_1200_300.jpg"
-							data-at-400="images/IMG_1200_400.jpg"
-							data-at-500="images/IMG_1200_500.jpg"
-							data-at-600="images/IMG_1200_600.jpg"
-							data-at-700="images/IMG_1200_700.jpg"
-							data-at-800="images/IMG_1200_800.jpg"
-							data-at-900="images/IMG_1200_900.jpg"
-							data-at-1000="images/IMG_1200_1000.jpg"
-							data-at-1500="images/IMG_1200_1500.jpg"
-							data-at-2000="images/IMG_1200_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1200_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1200.jpg"
+              data-caption="1200"
+              data-at-300="images/IMG_1200_300.jpg"
+              data-at-400="images/IMG_1200_400.jpg"
+              data-at-500="images/IMG_1200_500.jpg"
+              data-at-600="images/IMG_1200_600.jpg"
+              data-at-700="images/IMG_1200_700.jpg"
+              data-at-800="images/IMG_1200_800.jpg"
+              data-at-900="images/IMG_1200_900.jpg"
+              data-at-1000="images/IMG_1200_1000.jpg"
+              data-at-1500="images/IMG_1200_1500.jpg"
+              data-at-2000="images/IMG_1200_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1200_300.webp 300w, 
 									/images/IMG_1200_400.webp 400w,
 									/images/IMG_1200_500.webp 500w,
 									/images/IMG_1200_600.webp 600w,
 									/images/IMG_1200_700.webp 700w,
 									/images/IMG_1200_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1200_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1200_300.jpg 300w, 
 									/images/IMG_1200_400.jpg 400w,
 									/images/IMG_1200_500.jpg 500w,
 									/images/IMG_1200_600.jpg 600w,
 									/images/IMG_1200_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1200_300.jpg"
+                  alt="1200"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1200_300.jpg" 
-									alt="1200" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
-
-					<div class="gallery_item" >
-						<a href="images/IMG_1202.jpg" data-caption="1202"
-							data-at-300="images/IMG_1202_300.jpg"
-							data-at-400="images/IMG_1202_400.jpg"
-							data-at-500="images/IMG_1202_500.jpg"
-							data-at-600="images/IMG_1202_600.jpg"
-							data-at-700="images/IMG_1202_700.jpg"
-							data-at-800="images/IMG_1202_800.jpg"
-							data-at-900="images/IMG_1202_900.jpg"
-							data-at-1000="images/IMG_1202_1000.jpg"
-							data-at-1500="images/IMG_1202_1500.jpg"
-							data-at-2000="images/IMG_1202_2000.jpg">
-							<picture>
-								<source data-srcset="/images/IMG_1202_300.webp 300w, 
+          <div class="gallery_item">
+            <a
+              href="images/IMG_1202.jpg"
+              data-caption="1202"
+              data-at-300="images/IMG_1202_300.jpg"
+              data-at-400="images/IMG_1202_400.jpg"
+              data-at-500="images/IMG_1202_500.jpg"
+              data-at-600="images/IMG_1202_600.jpg"
+              data-at-700="images/IMG_1202_700.jpg"
+              data-at-800="images/IMG_1202_800.jpg"
+              data-at-900="images/IMG_1202_900.jpg"
+              data-at-1000="images/IMG_1202_1000.jpg"
+              data-at-1500="images/IMG_1202_1500.jpg"
+              data-at-2000="images/IMG_1202_2000.jpg"
+            >
+              <picture>
+                <source
+                  data-srcset="/images/IMG_1202_300.webp 300w, 
 									/images/IMG_1202_400.webp 400w,
 									/images/IMG_1202_500.webp 500w,
 									/images/IMG_1202_600.webp 600w,
 									/images/IMG_1202_700.webp 700w,
 									/images/IMG_1202_800.webp 800w"
+                  type="image/webp"
+                />
 
-								type="image/webp">
-
-								<source data-srcset="/images/IMG_1202_300.jpg 300w, 
+                <source
+                  data-srcset="/images/IMG_1202_300.jpg 300w, 
 									/images/IMG_1202_400.jpg 400w,
 									/images/IMG_1202_500.jpg 500w,
 									/images/IMG_1202_600.jpg 600w,
 									/images/IMG_1202_700.jpg 700w"
+                  type="image/jpg"
+                />
 
-								type="image/jpg">
+                <img
+                  data-sizes="auto"
+                  data-src="images/IMG_1202_300.jpg"
+                  alt="1202"
+                  class="lazyload"
+                />
+              </picture>
+            </a>
+          </div>
+        </section>
 
-								<img data-sizes="auto" 
-									data-src="images/IMG_1202_300.jpg" 
-									alt="1202" 
-									class="lazyload">
-							</picture>
-						</a>
-					</div>
+        <h3 id="testimonials" class="jumptarget">Testimonials</h3>
+        <section>
+          <div class="testimonials_container">
+            <div class="testimonial_item">
+              <p class="client">
+                <span class="client-name">Steve Duff </span>La Costa, CA.
+              </p>
+              <p>
+                I am very fortunate to have had Jose and his crew at
+                northsdgardens providing landscaping services at our home in
+                Carlsbad for more than 10 years. He and his colleagues go above
+                and beyond in their service and in their wide knowledge of
+                plants. Any request is gladly executed and special additional
+                services are always undertaken professionally and at a
+                reasonable cost. Overall, northsdgardens is an amazing value
+                with the friendliest landscaping experts you'll find. I highly
+                recommend them to anybody!
+              </p>
+            </div>
+            <div class="testimonial_item">
+              <p class="client">
+                <span class="client-name">Robert & Rosemary Callaghan</span>
+                Carlsbad, CA.
+              </p>
+              <p>
+                We live in Carlsbad, California. For the past 15 years, Jose
+                Cruz, of north san diego gardens company, has been our landscape
+                maintenance specialist. We have been very happy with his
+                performance. His dedication, work ethic, expertize, and helpful
+                assistance to us is very much appreciated. Our yard has never
+                looked better.
+              </p>
+              <p>
+                Recently, he designed a replacement for our side front yard that
+                turned out wonderfully. He provides low watering solutions and
+                is able to install new systems. He alerts you to possible water
+                issues and corrects them. northsdgardens company uses a mixture
+                of natural fertilizers and uses no chemicals on our lawn,
+                shrubs, hedges, trees, and roses.
+              </p>
+              <p>We strongly recommend his services.</p>
+            </div>
+            <div class="testimonial_item">
+              <p class="client">
+                <span class="client-name">Melissa Conway</span> Carlsbad, CA.
+              </p>
+              <p>
+                It is a pleasure to recommend the services of North San Diego
+                Gardens. The skilled experts of North San Diego Gardens
+                redesigned our garden and courtyard from top to bottom, and the
+                result is a flourishing masterpiece on which we recieve
+                compliments daily. They also design and construct concrete
+                patios, courtyards, and pathways, and the stamped concrete in
+                our garden is perfect. Most people who see it mistake it for
+                slate! If you are looking for a landscape service that will work
+                quickly and efficiently, delivering quality work at very
+                reasonable rates, North San Diego Landscape is your best option.
+                We feel very lucky to have found them, and a year and a half
+                later, we remain 100% satisfied with our beautiful garden.
+              </p>
+            </div>
+          </div>
+          <div>
+            <p class="more">
+              <span>
+                <a
+                  href="https://www.google.com/maps/place/North+SD+Gardens/@33.3243276,-117.3117332,10z/data=!4m5!3m4!1s0x0:0x2aa24d55b63145db!8m2!3d33.226736!4d-117.347439"
+                  target="_BLANK"
+                  title="Google Reviews"
+                >
+                  <i class="icon-google"><b>More reviews on Google</b></i>
+                </a>
+              </span>
+            </p>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>
+          Copyright North SD Gardens. Design and development by
+          <a href="http://gutierrezfrancisco.net/">Francisco Gutierrez.</a>
+        </p>
+      </footer>
+    </div>
 
-				</section>
+    <!-- SCRIPTS -->
+    <script
+      type="application/javascript"
+      src="js/lazysizes.min.js"
+      async=""
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"
+      async
+      onload="initLightbox()"
+    >
+      baguetteBox.run('.gallery');
+    </script>
 
-				<h3 id="testimonials" class="jumptarget">Testimonials</h3>
-				<section>
-					<div class="testimonials_container">
-						<div class="testimonial_item">
-							<p class="client"><span class="client-name">Steve Duff </span>La Costa, CA.</p>
-							<p>I am very fortunate to have had Jose and his crew at northsdgardens providing 
-								landscaping services at our home in Carlsbad for more than 10 years. He and his 
-								colleagues go above and beyond in their service and in their wide knowledge  of
-								plants. Any request is gladly executed and special additional services are always
-								undertaken professionally and at a reasonable cost. Overall, northsdgardens is 
-								an amazing value with the friendliest landscaping experts you'll find. I highly
-								recommend them to anybody!
-							</p>
-						</div>
-						<div class="testimonial_item">
-							<p class="client"><span class="client-name">Robert & Rosemary Callaghan</span> Carlsbad, CA.</p>
-							<p>
-								We live in Carlsbad, California. For the past 15 years, Jose Cruz, of north san diego gardens
-								company, has been our landscape maintenance specialist. We have been very happy with his 
-								performance. His dedication, work ethic, expertize, and helpful assistance to us is very 
-								much appreciated. Our yard has never looked better.
-							</p>
-							<p>
-								Recently, he designed a replacement for our side front yard that turned out wonderfully.
-								He provides low watering solutions and is able to install new systems. He alerts you to
-								possible water issues and corrects them. northsdgardens company uses a mixture of natural
-								fertilizers and uses no chemicals on our lawn, shrubs, hedges, trees, and roses.
-							</p>
-							<p>We strongly recommend his services.</p>
-						</div>
-						<div class="testimonial_item">
-							<p class="client"><span class="client-name">Melissa Conway</span> Carlsbad, CA.</p>
-							<p>It is a pleasure to recommend the services of North San Diego Gardens. The skilled experts 
-								of North San Diego Gardens redesigned our garden and courtyard from top to bottom, and the
-								result is a flourishing masterpiece on which we recieve compliments daily. They also design
-								and construct concrete patios, courtyards, and pathways, and the stamped concrete in our garden
-								is perfect. Most people who see it mistake it for slate! If you are looking for a landscape
-								service that will work quickly and efficiently, delivering quality work at very reasonable
-								rates, North San Diego Landscape is your best option. We feel very lucky to have found them, 
-								and a year and a half later, we remain 100% satisfied with our beautiful garden.
-							</p>
-						</div>
-					</div>
-					<div>
-						<p class="more">
-							<span>
-								<a href="https://www.google.com/maps/place/North+SD+Gardens/@33.3243276,-117.3117332,10z/data=!4m5!3m4!1s0x0:0x2aa24d55b63145db!8m2!3d33.226736!4d-117.347439" target="_BLANK" title="Google Reviews">
-									<i class="icon-google"><b>More reviews on Google</b></i>
-								</a>
-							</span>
-						</p>
-					</div>
-				</section>
-			</main>
-			<footer>
-				<p>Copyright North SD Gardens. Design and development by <a href="http://gutierrezfrancisco.net/">Francisco Gutierrez.</a></p>
-			</footer>
-	</div>
+    <script>
+      window.onscroll = function () {
+        sitckyHeader();
+      };
 
-	
+      const header = document.querySelector(".header");
+      const sticky = header.offsetTop;
 
-  <!-- SCRIPTS -->
-  <script type="application/javascript" src="js/lazysizes.min.js" async=""></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js" async onload="initLightbox()">baguetteBox.run('.gallery');</script>
+      const nav = document.querySelector(".nav");
+      const hamburger_menu = document.querySelector(".hamburger_menu");
 
-  <script>
-		window.onscroll = function() {sitckyHeader()};
-		
-		const header =document.querySelector('.header');
-		const sticky = header.offsetTop;
+      function sitckyHeader() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
 
-		const nav= document.querySelector('.nav');
-		const hamburger_menu = document.querySelector('.hamburger_menu');
-	
-		
-		function sitckyHeader() {
-		  if (window.pageYOffset > sticky) {
-			header.classList.add("sticky");
-		  } else {
-			header.classList.remove("sticky");
-		  }
-		}
+      function changeHamburgerMenu() {
+        hamburger_menu.classList.toggle("change");
+        nav.classList.toggle("open");
+      }
 
-		function changeHamburgerMenu() {
-			hamburger_menu.classList.toggle("change");
-			nav.classList.toggle('open');
-		}
-
-		function initLightbox() {
-			baguetteBox.run('.gallery');
-			console.log('initiated');
-		}
-
-		</script>
-
-		
-</body>
-
+      function initLightbox() {
+        baguetteBox.run(".gallery");
+        console.log("initiated");
+      }
+    </script>
+  </body>
 </html>
